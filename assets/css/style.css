@@ -1,0 +1,394 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* background */
+.background_img {
+  background-image: url(../img/bacground_img.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+
+  min-height: 100vh;
+}
+/* search satrt */
+.search_bg {
+  height: 250px;
+  margin-bottom: 20px;
+  background-image: url("../img/search.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.searchbar {
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 16%;
+  background-color: #fff;
+  border-radius: 30px;
+  width: 40%;
+  margin-top: 23%;
+}
+
+.search_input {
+  color: #000;
+  border: 0;
+  outline: 0;
+  background: none;
+  padding: 10px 15px;
+  line-height: 20px;
+}
+
+.search_icon {
+  height: 100%;
+  width: 15%;
+  float: right;
+  display: flex;
+  background: #7e2572;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0% 30px 30px 0%;
+  color: white;
+  text-decoration: none;
+}
+/* search end */
+
+/* product rack satrt */
+.product_rack {
+  width: 100%;
+  height: 500px;
+  margin-top: 100px;
+
+  background-repeat: no-repeat;
+  margin-bottom: 0px;
+  background-image: url("../img/product_rack.svg");
+  background-position: 0 0;
+}
+.box_continer {
+  top: -50px !important;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 250px;
+  margin-left: 10px;
+  margin-right: 10px;
+  align-content: space-between;
+}
+.box {
+  width: 100%;
+  height: auto;
+  max-width: 50px;
+  max-height: 50px;
+
+  margin-left: 10px;
+  padding-bottom: 150px;
+  line-height: 200px;
+}
+
+/* product rack end */
+
+/* card satrt */
+.card_bg {
+  height: 600px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-image: url("../img/card.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card_box {
+  margin-top: 68%;
+  margin-left: 16%;
+  width: 68%;
+  height: 48%;
+}
+.Card_img_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+}
+.card_img {
+  width: 20%;
+}
+.card_title_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2%;
+}
+.card_title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.card_perctange_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  padding-top: 2%;
+  width: 50%;
+}
+.card_gms_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2%;
+  width: 50%;
+}
+.card_gms_number {
+  font-size: 48px;
+  font-weight: bold;
+  color: #7e2572;
+  line-height: 1;
+  margin-bottom: 0rem;
+}
+.card_perctange_list li {
+  font-size: 16px;
+  font-weight: 600;
+}
+.card_gms_word {
+  font-size: 32px;
+  line-height: 1;
+  font-weight: bold;
+}
+.card_flex {
+  display: flex;
+}
+.card_per_footer {
+  font-size: 12px;
+  padding-left: 10px;
+}
+/* card end */
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1340px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  /* search satrt */
+  .search_bg {
+    height: 250px;
+    overflow: hidden;
+    margin-top: -50px;
+    margin-bottom: 20px;
+    background-image: url("../img/search.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .searchbar {
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 18%;
+    background-color: #fff;
+    border-radius: 30px;
+    width: 70%;
+    margin-top: 32%;
+  }
+
+  .search_input {
+    color: #000;
+    border: 0;
+    outline: 0;
+    background: none;
+    padding: 13px 15px;
+    line-height: 20px;
+  }
+
+  .search_icon {
+    height: 100%;
+    width: 15%;
+    float: right;
+    display: flex;
+    background: #7e2572;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0% 30px 30px 0%;
+    color: white;
+    text-decoration: none;
+  }
+  /* search end */
+  /* product rack satrt */
+  .product_rack {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 50px;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    background-image: url("../img/product_rack.svg");
+    background-position: 0 0;
+  }
+  .box_continer {
+    top: -50px !important;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    align-content: space-between;
+  }
+  .box {
+    width: 100%;
+    height: auto;
+    max-width: 30px;
+    max-height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-bottom: 110px;
+    line-height: 145px;
+  }
+
+  /* product rack end */
+
+  /* card satrt */
+  .card_bg {
+    height: 450px;
+    overflow: hidden;
+
+    width: 100%;
+    margin-bottom: 20px;
+    background-image: url("../img/card.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .card_box {
+    margin-top: 70%;
+    margin-left: 16%;
+    width: 70%;
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* search satrt */
+  .search_bg {
+    height: 180px;
+    overflow: hidden;
+    margin-top: -50px;
+    margin-bottom: 20px;
+    background-image: url("../img/search.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .searchbar {
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 18%;
+    background-color: #fff;
+    border-radius: 30px;
+    width: 70%;
+    margin-top: 32%;
+  }
+
+  .search_input {
+    color: #000;
+    border: 0;
+    outline: 0;
+    background: none;
+    padding: 8px 15px;
+    line-height: 20px;
+  }
+
+  .search_icon {
+    height: 100%;
+    width: 15%;
+    float: right;
+    display: flex;
+    background: #7e2572;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0% 30px 30px 0%;
+    color: white;
+    text-decoration: none;
+  }
+  /* search end */
+  /* product rack satrt */
+  .product_rack {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    margin-top: 50px;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    background-image: url("../img/product_rack.svg");
+    background-position: 0 0;
+  }
+  .box_continer {
+    top: -10px !important;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    align-content: space-between;
+  }
+  .box {
+    width: 100%;
+    height: auto;
+    max-width: 20px;
+    max-height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-bottom: 70px;
+    line-height: 100px;
+  }
+
+  .col-md,
+  .col-md-1,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9 {
+    position: relative;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  /* product rack end */
+
+  /* card satrt */
+  .card_bg {
+    height: 600px;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 20px;
+    background-image: url("../img/card.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .card_box {
+    margin-top: 75% !important;
+    margin-left: 16%;
+    width: 68%;
+    height: 48%;
+  }
+}
