@@ -13,7 +13,6 @@ html {
   height: 100%;
   overflow: hidden;
   width: 100%;
-
   min-height: 100vh;
 }
 /* search satrt */
@@ -63,7 +62,6 @@ html {
   width: 100%;
   height: 500px;
   margin-top: 88px;
-
   background-repeat: no-repeat;
   margin-bottom: 0px;
   background-image: url("../img/product_rack.svg");
@@ -75,7 +73,6 @@ html {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-
   margin-left: 10px;
   margin-right: 10px;
   align-content: space-between;
@@ -342,9 +339,7 @@ html {
     position: absolute;
     display: flex;
     flex-wrap: wrap;
-
     width: 100%;
-
     margin-left: 10px;
     margin-right: 10px;
     align-content: space-between;
