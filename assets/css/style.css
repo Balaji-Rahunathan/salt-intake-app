@@ -39,7 +39,7 @@ html {
 /* search satrt */
 .search_bg {
   height: 250px;
-  margin-bottom: 25%;
+  margin-bottom: 20%;
   background-image: url("../img/search.svg");
   background-position: center center;
   background-repeat: no-repeat;
