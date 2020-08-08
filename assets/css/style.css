@@ -51,7 +51,7 @@ html {
   height: 20%;
   background-color: #fff;
   border-radius: 30px;
-  width: 40%;
+  width: 35%;
 }
 
 .search_input {
@@ -134,7 +134,7 @@ html {
   background-repeat: no-repeat;
 }
 .card_box {
-  margin-top: 68%;
+  margin-top: 60%;
   margin-left: 16%;
   width: 68%;
   height: 48%;
