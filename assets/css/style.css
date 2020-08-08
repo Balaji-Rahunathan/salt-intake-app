@@ -8,7 +8,7 @@ html {
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
-  height: 7px;
+  height: 12px;
 }
 
 /* Track */
@@ -81,52 +81,46 @@ html {
 /* product rack satrt */
 .product_rack {
   width: 100%;
-  height: auto;
+  height: 480px;
   overflow-x: scroll;
+  background-repeat: repeat !important;
   margin-top: 3rem;
   background-image: url("../img/product_rack.svg");
-  background-position: 0 0;
+
   margin-bottom: 5%;
 }
-.box_continer {
+.wrapper {
+  width: 96.7%;
+  overflow-x: scroll;
   position: absolute;
-  top: -3rem !important;
-  display: flex;
-  flex-wrap: nowrap;
-
-  line-height: calc(100% + 5rem);
-}
-.box_continer_1 {
-  display: flex;
-  flex-wrap: nowrap;
-  text-align: bottom;
-  line-height: calc(100% + 8rem);
-}
-.box_continer_2 {
-  display: flex;
-  flex-wrap: nowrap;
-  text-align: bottom;
-  line-height: calc(100% + 8rem);
-}
-.box_continer_3 {
-  display: flex;
-  flex-wrap: nowrap;
-  text-align: bottom;
-  line-height: calc(100% + 8rem);
-}
-.box {
-  width: 100%;
-
-  margin-right: 10px;
-  margin-left: 10px;
-  height: auto;
-  width: 50px;
-  flex: 0 0 auto;
+  top: -100px !important;
 }
 
-.box img {
+.box_container {
+  overflow: hidden;
+}
+
+.box_container ul {
+  float: left;
+  padding: 0;
+}
+
+.box_container ul li {
+  list-style-type: none;
+  line-height: 150px;
+
+  width: 100px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.box_container li img {
   vertical-align: bottom !important;
   border-style: none;
+  width: 100%;
+  height: auto;
+  max-height: 70px;
+  object-fit: contain;
 }
 
 /* product rack end */
@@ -263,53 +257,46 @@ html {
   /* product rack satrt */
   .product_rack {
     width: 100%;
-    height: auto;
+    height: 340px;
     background-repeat: no-repeat;
     overflow-x: scroll;
     margin-top: 80px;
     background-image: url("../img/product_rack.svg");
     background-position: 0 0;
   }
-  .box_continer {
+  .wrapper {
+    width: 95%;
+    overflow-x: scroll;
     position: absolute;
-    top: -20px !important;
-    display: flex;
-    flex-wrap: nowrap;
-    line-height: 100px;
-    z-index: 999;
-  }
-  .box_continer_1 {
-    display: flex;
-    flex-wrap: nowrap;
-    line-height: 5rem !important;
-    z-index: 999;
-  }
-  .box_continer_2 {
-    display: flex;
-    flex-wrap: nowrap;
-    line-height: 5rem !important;
-    z-index: 999;
-  }
-  .box_continer_3 {
-    display: flex;
-    flex-wrap: nowrap;
-    line-height: 5rem !important;
-    z-index: 999;
-  }
-  .box {
-    width: 100%;
-    margin-right: 10px;
-    margin-left: 10px;
-    height: auto;
-    width: 30px;
-    flex: 0 0 auto;
+    top: -30px !important;
   }
 
-  .box img {
+  .box_container {
+    overflow: hidden;
+  }
+
+  .box_container ul {
+    float: left;
+    padding: 0;
+  }
+
+  .box_container ul li {
+    list-style-type: none;
+    line-height: 110px;
+
+    width: 100px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .box_container li img {
     vertical-align: bottom !important;
     border-style: none;
+    width: 100%;
+    height: auto;
+    max-height: 70px;
+    object-fit: contain;
   }
-
   /* product rack end */
   /* card satrt */
   .card_bg {
@@ -324,7 +311,7 @@ html {
   }
 
   .card_box {
-    margin-top: 155%;
+    margin-top: 150%;
     margin-left: 1%;
     width: 100%;
     height: 50%;
@@ -387,48 +374,44 @@ html {
   /* product rack satrt */
   .product_rack {
     width: 100%;
-    height: auto;
+    height: 234px;
     background-repeat: repeat-x;
     overflow-x: scroll;
     margin-top: 110px;
     background-image: url("../img/product_rack.svg");
     background-position: 0 0;
   }
-  .box_continer {
+  .wrapper {
+    width: 96.7%;
+    overflow-x: scroll;
     position: absolute;
-    top: 10px !important;
-    display: flex;
-    flex-wrap: nowrap;
-    line-height: 100px;
-    z-index: 999;
-  }
-  .box_continer_1 {
-    display: flex;
-    flex-wrap: nowrap;
-    line-height: 4.5rem !important;
-  }
-  .box_continer_2 {
-    display: flex;
-    flex-wrap: nowrap;
-    line-height: 4.5rem !important;
-  }
-  .box_continer_3 {
-    display: flex;
-    flex-wrap: nowrap;
-    line-height: 4.5rem !important;
-  }
-  .box {
-    width: 100%;
-    margin-right: 10px;
-    margin-left: 10px;
-    height: auto;
-    width: 25px;
-    flex: 0 0 auto;
+    top: 46px !important;
   }
 
-  .box img {
+  .box_container {
+    overflow: hidden;
+  }
+
+  .box_container ul {
+    float: left;
+    padding: 0;
+  }
+
+  .box_container ul li {
+    list-style-type: none;
+    line-height: 70px;
+    width: 100px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .box_container li img {
     vertical-align: bottom !important;
     border-style: none;
+    width: 100%;
+    height: auto;
+    max-height: 50px;
+    object-fit: contain;
   }
 
   /* product rack end */
