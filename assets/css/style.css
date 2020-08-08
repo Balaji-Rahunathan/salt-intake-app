@@ -39,20 +39,19 @@ html {
 /* search satrt */
 .search_bg {
   height: 250px;
-  margin-bottom: 80px;
+  margin-bottom: 27%;
   background-image: url("../img/search.svg");
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .searchbar {
-  margin-bottom: auto;
+  margin-bottom: 1%;
   margin-top: auto;
-  height: 16%;
+  height: 20%;
   background-color: #fff;
   border-radius: 30px;
   width: 40%;
-  margin-top: 23%;
 }
 
 .search_input {
@@ -60,7 +59,7 @@ html {
   border: 0;
   outline: 0;
   background: none;
-  padding: 10px 15px;
+  padding: 15px 20px;
   line-height: 20px;
 }
 
@@ -196,7 +195,7 @@ html {
 }
 .card_per_footer {
   font-size: 12px;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 /* card end */
 
@@ -206,9 +205,10 @@ html {
   .container-md,
   .container-sm,
   .container-xl {
-    max-width: 1340px;
+    max-width: 95%;
   }
 }
+
 @media screen and (max-width: 1200px) {
   /* search satrt */
   .search_bg {
