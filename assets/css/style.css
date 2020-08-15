@@ -134,11 +134,10 @@ html {
   background-repeat: no-repeat;
 }
 .card_box {
-  margin-top: 62%;
-
-  margin-left: 18%;
-  width: 68%;
-  height: 48%;
+  margin-top: 52%;
+  margin-left: 20%;
+  width: 65%;
+  height: 45%;
 }
 .Card_img_box {
   display: flex;
