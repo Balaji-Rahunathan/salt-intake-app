@@ -43,7 +43,7 @@
                   <div class="box_abosutly">
                     <div class="wrapper">
                       <div class="box_container">
-                        <ul id="birds">
+                        <ul id="product_list">
                           <li></li>
                         </ul>
                       </div>
@@ -56,7 +56,11 @@
           <div class="col-md-4 card_bg">
             <div class="card_box">
               <div class="Card_img_box">
-                <img class="card_img" src="assets/images/prod_img4.svg" />
+                <img
+                  class="card_img droppable"
+                  droppable="true"
+                  src="assets/images/product/prod_img4.svg"
+                />
               </div>
               <div class="Card_img_box">
                 <h5 class="card_title">Potato Chips</h5>
@@ -88,66 +92,9 @@
       </div>
     </section>
 
-    <script>
-      var oXHR = window.XMLHttpRequest
-        ? new XMLHttpRequest()
-        : new ActiveXObject("Microsoft.XMLHTTP");
-      function reportStatus() {
-        if (oXHR.readyState == 4) showTheList(this.responseText);
-      }
-      oXHR.onreadystatechange = reportStatus;
-      oXHR.open("GET", "data/product.json", true);
-      oXHR.send();
-      function showTheList(json) {
-        var arrItems = [];
-        arrItems = JSON.parse(json);
-        var li = document.getElementById("birds");
-        li.innerHTML = "";
-        for (i = 0; i <= arrItems.length - 1; i++) {
-          var img = document.createElement("img");
-
-          img.src = arrItems[i].Image;
-          img.setAttribute("draggable", true);
-
-          img.className = "ui-draggable ui-draggable-handle drag";
-          var divRight = document.createElement("li");
-          divRight.appendChild(img);
-          li.appendChild(divRight);
-        }
-        var numberOfResults = $("li").length;
-        var numberPerRow = 4;
-        var $firstUL = $(" .box_container ul");
-        var numberOfRows = Math.ceil(numberOfResults / numberPerRow);
-
-        var maxWidth = Math.max.apply(
-          null,
-          $("li")
-            .map(function () {
-              return $(this).outerWidth(true);
-            })
-            .get()
-        );
-        $(function () {
-          $(".drag").draggable();
-        });
-        $(".box_container").css({ width: maxWidth * numberOfRows + "px" });
-
-        for (var i = 1; i <= numberOfRows; i++) {
-          $(".box_container").append("<ul></ul>");
-        }
-        for (var i = 1; i <= numberOfRows; i++) {
-          $firstUL
-            .find("li:lt(" + numberPerRow + ")")
-            .appendTo("ul:eq(" + i + ")");
-        }
-
-        $("li").each(function () {
-          $(this).css({ width: maxWidth + "px" });
-        });
-      }
-    </script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="controls/control.js"></script>
+
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="controls/control.js"></script>
   </body>
 </html>
