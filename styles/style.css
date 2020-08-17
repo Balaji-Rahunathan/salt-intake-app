@@ -27,7 +27,7 @@ html {
 }
 /* background */
 .background_img {
-  background-image: url(../img/bacground_img.svg);
+  background-image: url(../assets/images/bacground_img.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -40,7 +40,7 @@ html {
 .search_bg {
   height: 250px;
   margin-bottom: 22%;
-  background-image: url("../img/search.svg");
+  background-image: url("../assets/images/search.svg");
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -84,7 +84,7 @@ html {
   overflow-x: scroll;
   background-repeat: repeat !important;
   margin-top: 3rem;
-  background-image: url("../img/product_rack.svg");
+  background-image: url("../assets/images/product_rack.svg");
 
   margin-bottom: 5%;
 }
@@ -129,7 +129,7 @@ html {
   height: 600px;
   width: 100%;
   margin-bottom: 20px;
-  background-image: url("../img/card.svg");
+  background-image: url("../assets/images/card.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -217,7 +217,7 @@ html {
     overflow: hidden;
     margin-top: -50px;
     margin-bottom: 20px;
-    background-image: url("../img/search.svg");
+    background-image: url("../assets/images/search.svg");
     background-position: center center;
     background-repeat: no-repeat;
   }
@@ -262,7 +262,7 @@ html {
     background-repeat: no-repeat;
     overflow-x: scroll;
     margin-top: 80px;
-    background-image: url("../img/product_rack.svg");
+    background-image: url("../assets/images/product_rack.svg");
     background-position: 0 0;
   }
   .wrapper {
@@ -305,7 +305,7 @@ html {
     overflow: hidden;
     width: 100%;
     margin-bottom: 20px;
-    background-image: url("../img/card.svg");
+    background-image: url("../assets/images/card.svg");
     background-position: center;
     background-repeat: no-repeat;
     margin-top: -150px;
@@ -379,7 +379,7 @@ html {
     background-repeat: repeat-x;
     overflow-x: scroll;
     margin-top: 110px;
-    background-image: url("../img/product_rack.svg");
+    background-image: url("../assets/images/product_rack.svg");
     background-position: 0 0;
   }
   .wrapper {
@@ -444,7 +444,7 @@ html {
     width: 100%;
     margin-top: -100px;
     margin-bottom: 20px;
-    background-image: url("../img/card.svg");
+    background-image: url("../assets/images/card.svg");
     background-position: center;
     background-repeat: no-repeat;
   }

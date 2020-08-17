@@ -7,13 +7,12 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <title>Document</title>
+    <title>Salt Intake App</title>
   </head>
   <body>
     <section class="background_img">
@@ -57,7 +56,7 @@
           <div class="col-md-4 card_bg">
             <div class="card_box">
               <div class="Card_img_box">
-                <img class="card_img" src="assets/img/prod_img4.svg" />
+                <img class="card_img" src="assets/images/prod_img4.svg" />
               </div>
               <div class="Card_img_box">
                 <h5 class="card_title">Potato Chips</h5>
@@ -89,10 +88,6 @@
       </div>
     </section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script></script>
     <script>
       var oXHR = window.XMLHttpRequest
         ? new XMLHttpRequest()
@@ -101,7 +96,7 @@
         if (oXHR.readyState == 4) showTheList(this.responseText);
       }
       oXHR.onreadystatechange = reportStatus;
-      oXHR.open("GET", "product.json", true);
+      oXHR.open("GET", "data/product.json", true);
       oXHR.send();
       function showTheList(json) {
         var arrItems = [];
@@ -110,7 +105,11 @@
         li.innerHTML = "";
         for (i = 0; i <= arrItems.length - 1; i++) {
           var img = document.createElement("img");
+
           img.src = arrItems[i].Image;
+          img.setAttribute("draggable", true);
+
+          img.className = "ui-draggable ui-draggable-handle drag";
           var divRight = document.createElement("li");
           divRight.appendChild(img);
           li.appendChild(divRight);
@@ -128,7 +127,9 @@
             })
             .get()
         );
-
+        $(function () {
+          $(".drag").draggable();
+        });
         $(".box_container").css({ width: maxWidth * numberOfRows + "px" });
 
         for (var i = 1; i <= numberOfRows; i++) {
@@ -143,21 +144,10 @@
         $("li").each(function () {
           $(this).css({ width: maxWidth + "px" });
         });
-
-        function allowDrop(ev) {
-          ev.preventDefault();
-        }
-
-        function drag(ev) {
-          ev.dataTransfer.setData("text", ev.target.id);
-        }
-
-        function drop(ev) {
-          ev.preventDefault();
-          var data = ev.dataTransfer.getData("text");
-          ev.target.appendChild(document.getElementById(data));
-        }
       }
     </script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="controls/control.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   </body>
 </html>

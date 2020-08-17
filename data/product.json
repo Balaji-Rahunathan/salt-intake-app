@@ -2,7 +2,7 @@
   {
     "ID": "001",
     "Name": "Apple",
-    "Image": "assets/img/prod_img1.svg",
+    "Image": "assets/images/prod_img1.svg",
     "riskFactor": "high",
     "saltLevel": "2mg"
   },
@@ -10,412 +10,412 @@
   {
     "ID": "002",
     "Name": "JSON",
-    "Image": "assets/img/prod_img2.svg"
+    "Image": "assets/images/prod_img2.svg"
   },
 
   {
     "ID": "003",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img3.svg"
+    "Image": "assets/images/prod_img3.svg"
   },
   {
     "ID": "004",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img4.svg"
+    "Image": "assets/images/prod_img4.svg"
   },
   {
     "ID": "005",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img.svg"
+    "Image": "assets/images/prod_img.svg"
   },
   {
     "ID": "006",
     "Name": "Angular",
-    "Image": "assets/img/prod_img1.svg"
+    "Image": "assets/images/prod_img1.svg"
   },
 
   {
     "ID": "007",
     "Name": "JSON",
-    "Image": "assets/img/prod_img2.svg"
+    "Image": "assets/images/prod_img2.svg"
   },
 
   {
     "ID": "008",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img3.svg"
+    "Image": "assets/images/prod_img3.svg"
   },
   {
     "ID": "009",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img4.svg"
+    "Image": "assets/images/prod_img4.svg"
   },
   {
     "ID": "010",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img.svg"
+    "Image": "assets/images/prod_img.svg"
   },
   {
     "ID": "011",
     "Name": "Angular",
-    "Image": "assets/img/prod_img1.svg"
+    "Image": "assets/images/prod_img1.svg"
   },
 
   {
     "ID": "012",
     "Name": "JSON",
-    "Image": "assets/img/prod_img2.svg"
+    "Image": "assets/images/prod_img2.svg"
   },
 
   {
     "ID": "013",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img3.svg"
+    "Image": "assets/images/prod_img3.svg"
   },
   {
     "ID": "014",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img4.svg"
+    "Image": "assets/images/prod_img4.svg"
   },
   {
     "ID": "015",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img.svg"
+    "Image": "assets/images/prod_img.svg"
   },
   {
     "ID": "016",
     "Name": "Angular",
-    "Image": "assets/img/prod_img1.svg"
+    "Image": "assets/images/prod_img1.svg"
   },
 
   {
     "ID": "017",
     "Name": "JSON",
-    "Image": "assets/img/prod_img2.svg"
+    "Image": "assets/images/prod_img2.svg"
   },
 
   {
     "ID": "018",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img3.svg"
+    "Image": "assets/images/prod_img3.svg"
   },
   {
     "ID": "019",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img4.svg"
+    "Image": "assets/images/prod_img4.svg"
   },
   {
     "ID": "020",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img.svg"
+    "Image": "assets/images/prod_img.svg"
   },
   {
     "ID": "016",
     "Name": "Angular",
-    "Image": "assets/img/prod_img1.svg"
+    "Image": "assets/images/prod_img1.svg"
   },
 
   {
     "ID": "017",
     "Name": "JSON",
-    "Image": "assets/img/prod_img2.svg"
+    "Image": "assets/images/prod_img2.svg"
   },
 
   {
     "ID": "018",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img3.svg"
+    "Image": "assets/images/prod_img3.svg"
   },
   {
     "ID": "019",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img4.svg"
+    "Image": "assets/images/prod_img4.svg"
   },
   {
     "ID": "020",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img.svg"
+    "Image": "assets/images/prod_img.svg"
   },
   {
     "ID": "016",
     "Name": "Angular",
-    "Image": "assets/img/prod_img1.svg"
+    "Image": "assets/images/prod_img1.svg"
   },
 
   {
     "ID": "017",
     "Name": "JSON",
-    "Image": "assets/img/prod_img2.svg"
+    "Image": "assets/images/prod_img2.svg"
   },
 
   {
     "ID": "018",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img3.svg"
+    "Image": "assets/images/prod_img3.svg"
   },
   {
     "ID": "019",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img4.svg"
+    "Image": "assets/images/prod_img4.svg"
   },
   {
     "ID": "020",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img.svg"
+    "Image": "assets/images/prod_img.svg"
   },
   {
     "ID": "016",
     "Name": "Angular",
-    "Image": "assets/img/prod_img1.svg"
+    "Image": "assets/images/prod_img1.svg"
   },
 
   {
     "ID": "017",
     "Name": "JSON",
-    "Image": "assets/img/prod_img2.svg"
+    "Image": "assets/images/prod_img2.svg"
   },
 
   {
     "ID": "018",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img3.svg"
+    "Image": "assets/images/prod_img3.svg"
   },
   {
     "ID": "019",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img4.svg"
+    "Image": "assets/images/prod_img4.svg"
   },
   {
     "ID": "020",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img.svg"
+    "Image": "assets/images/prod_img.svg"
   },
   {
     "ID": "016",
     "Name": "Angular",
-    "Image": "assets/img/prod_img1.svg"
+    "Image": "assets/images/prod_img1.svg"
   },
 
   {
     "ID": "017",
     "Name": "JSON",
-    "Image": "assets/img/prod_img2.svg"
+    "Image": "assets/images/prod_img2.svg"
   },
 
   {
     "ID": "018",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img3.svg"
+    "Image": "assets/images/prod_img3.svg"
   },
   {
     "ID": "019",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img4.svg"
+    "Image": "assets/images/prod_img4.svg"
   },
   {
     "ID": "020",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img.svg"
+    "Image": "assets/images/prod_img.svg"
   },
   {
     "ID": "016",
     "Name": "Angular",
-    "Image": "assets/img/prod_img1.svg"
+    "Image": "assets/images/prod_img1.svg"
   },
 
   {
     "ID": "017",
     "Name": "JSON",
-    "Image": "assets/img/prod_img2.svg"
+    "Image": "assets/images/prod_img2.svg"
   },
 
   {
     "ID": "018",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img3.svg"
+    "Image": "assets/images/prod_img3.svg"
   },
   {
     "ID": "019",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img4.svg"
+    "Image": "assets/images/prod_img4.svg"
   },
   {
     "ID": "020",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img.svg"
+    "Image": "assets/images/prod_img.svg"
   },
   {
     "ID": "017",
     "Name": "JSON",
-    "Image": "assets/img/prod_img2.svg"
+    "Image": "assets/images/prod_img2.svg"
   },
 
   {
     "ID": "018",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img3.svg"
+    "Image": "assets/images/prod_img3.svg"
   },
   {
     "ID": "019",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img4.svg"
+    "Image": "assets/images/prod_img4.svg"
   },
   {
     "ID": "020",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img.svg"
+    "Image": "assets/images/prod_img.svg"
   },
   {
     "ID": "017",
     "Name": "JSON",
-    "Image": "assets/img/prod_img2.svg"
+    "Image": "assets/images/prod_img2.svg"
   },
 
   {
     "ID": "018",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img3.svg"
+    "Image": "assets/images/prod_img3.svg"
   },
   {
     "ID": "019",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img4.svg"
+    "Image": "assets/images/prod_img4.svg"
   },
   {
     "ID": "020",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img.svg"
+    "Image": "assets/images/prod_img.svg"
   },
   {
     "ID": "017",
     "Name": "JSON",
-    "Image": "assets/img/prod_img2.svg"
+    "Image": "assets/images/prod_img2.svg"
   },
 
   {
     "ID": "018",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img3.svg"
+    "Image": "assets/images/prod_img3.svg"
   },
   {
     "ID": "019",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img4.svg"
+    "Image": "assets/images/prod_img4.svg"
   },
   {
     "ID": "020",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img.svg"
+    "Image": "assets/images/prod_img.svg"
   },
   {
     "ID": "017",
     "Name": "JSON",
-    "Image": "assets/img/prod_img2.svg"
+    "Image": "assets/images/prod_img2.svg"
   },
 
   {
     "ID": "018",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img3.svg"
+    "Image": "assets/images/prod_img3.svg"
   },
   {
     "ID": "019",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img4.svg"
+    "Image": "assets/images/prod_img4.svg"
   },
   {
     "ID": "020",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img.svg"
+    "Image": "assets/images/prod_img.svg"
   },
   {
     "ID": "017",
     "Name": "JSON",
-    "Image": "assets/img/prod_img2.svg"
+    "Image": "assets/images/prod_img2.svg"
   },
 
   {
     "ID": "018",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img3.svg"
+    "Image": "assets/images/prod_img3.svg"
   },
   {
     "ID": "019",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img4.svg"
+    "Image": "assets/images/prod_img4.svg"
   },
   {
     "ID": "020",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img.svg"
+    "Image": "assets/images/prod_img.svg"
   },
   {
     "ID": "017",
     "Name": "JSON",
-    "Image": "assets/img/prod_img2.svg"
+    "Image": "assets/images/prod_img2.svg"
   },
 
   {
     "ID": "018",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img3.svg"
+    "Image": "assets/images/prod_img3.svg"
   },
   {
     "ID": "019",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img4.svg"
+    "Image": "assets/images/prod_img4.svg"
   },
   {
     "ID": "020",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img.svg"
+    "Image": "assets/images/prod_img.svg"
   },
   {
     "ID": "017",
     "Name": "JSON",
-    "Image": "assets/img/prod_img2.svg"
+    "Image": "assets/images/prod_img2.svg"
   },
 
   {
     "ID": "018",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img3.svg"
+    "Image": "assets/images/prod_img3.svg"
   },
   {
     "ID": "019",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img4.svg"
+    "Image": "assets/images/prod_img4.svg"
   },
   {
     "ID": "020",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img.svg"
+    "Image": "assets/images/prod_img.svg"
   },
   {
     "ID": "021",
     "Name": "Angular",
-    "Image": "assets/img/prod_img1.svg"
+    "Image": "assets/images/prod_img1.svg"
   },
 
   {
     "ID": "022",
     "Name": "JSON",
-    "Image": "assets/img/prod_img2.svg"
+    "Image": "assets/images/prod_img2.svg"
   },
 
   {
     "ID": "023",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img3.svg"
+    "Image": "assets/images/prod_img3.svg"
   },
   {
     "ID": "024",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img4.svg"
+    "Image": "assets/images/prod_img4.svg"
   },
   {
     "ID": "025",
     "Name": "Asp.Net",
-    "Image": "assets/img/prod_img.svg"
+    "Image": "assets/images/prod_img.svg"
   }
 ]
