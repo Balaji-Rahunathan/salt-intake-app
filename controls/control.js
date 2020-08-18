@@ -38,31 +38,13 @@ function showTheList(json) {
   );
 
   $(".draggable").draggable({
-    stop: function (event, ui) {
-      var target = document.querySelector(".draggable");
-      target.style.top = 0;
-      target.style.left = 0;
-      target.style.right = 0;
-      target.style.bottom = 0;
-      target.style.opacity = 1;
-    },
+    revert: "invalid",
+    refreshPositions: true,
   });
 
-  $(".drag").draggable({
-    drag: function (event, ui) {
-      var target = document.querySelector(".draggable");
-      target.style.opacity = 0.5;
-    },
-  });
   $(".droppable").droppable({
     drop: function (ui, event) {
-      var target = document.querySelector(".draggable");
       event.target.appendChild(document.getElementById(".draggable"));
-      target.style.opacity = 0.5;
-      target.style.top = 0;
-      target.style.left = 0;
-      target.style.right = 0;
-      target.style.bottom = 0;
     },
   });
 
