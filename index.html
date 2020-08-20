@@ -1,92 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title>Title of the document</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     />
-
-    <link rel="stylesheet" href="styles/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Salt Intake App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <title>Document</title>
   </head>
   <body>
     <div class="container-fluid page-bg">
-      <div class="container">
-        <div class="search-board">
-          <div class="d-flex justify-content-center h-100">
-            <div class="searchbar">
-              <input
-                class="search_input"
-                placeholder="Search"
-                type="text"
-                id="search"
-                name=""
-              />
-              <a href="#" class="search_icon"><i class="fa fa-search"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="info-board">
-          <div class="container">
-            <div class="info-rel">
-              <div class="card_box">
-                <div class="Card_img_box">
-                  <img
-                    class="card_img droppable"
-                    droppable="true"
-                    src="assets/images/product/prod_img4.svg"
-                  />
-                </div>
-                <div class="Card_img_box">
-                  <h5 class="card_title">Potato Chips</h5>
-                </div>
-
-                <div class="card_flex">
-                  <div class="card_perctange_box">
-                    <ul class="card_perctange_list">
-                      <li>
-                        Low
-                      </li>
-                      <li>
-                        Medium
-                      </li>
-                      <li>
-                        Heigh
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="card_gms_box">
-                    <h1 class="card_gms_number">3</h1>
-                    <h3 class="card_gms_word">Gms</h3>
-                  </div>
-                </div>
-                <p class="card_per_footer">*Per 100g Food Product</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="rack">
-          <div class="rack-cont">
-            <div class="wrapper">
-              <div class="box_container">
-                <ul id="product_list">
-                  <li></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+      <div class="search-board">
+        <div class="searchbar">
+          <input
+            class="search_input"
+            placeholder="Search"
+            type="text"
+            id="search"
+            name=""
+          />
+          <a href="#" class="search_icon"><i class="fa fa-search"></i></a>
         </div>
       </div>
+      <div class="info-board">
+        <div class="card_box">
+          <div class="Card_img_box">
+            <img
+              class="card_img droppable"
+              droppable="true"
+              src="assets/images/product/prod_img4.svg"
+            />
+          </div>
+          <div class="Card_img_box">
+            <h5 class="card_title">Potato Chips</h5>
+          </div>
+
+          <div class="card_flex">
+            <div class="card_perctange_box">
+              <ul class="card_perctange_list">
+                <li>
+                  Low
+                </li>
+                <li>
+                  Medium
+                </li>
+                <li>
+                  Heigh
+                </li>
+              </ul>
+            </div>
+            <div class="card_gms_box">
+              <h1 class="card_gms_number">3</h1>
+              <h3 class="card_gms_word">Gms</h3>
+            </div>
+          </div>
+          <p class="card_per_footer">*Per 100g Food Product</p>
+        </div>
+      </div>
+      <div class="rack"></div>
+      <div class="background-bootom"></div>
     </div>
-    <div class="bg-bottom"></div>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="controls/control.js"></script>
   </body>
 </html>

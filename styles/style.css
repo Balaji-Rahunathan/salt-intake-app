@@ -1,41 +1,35 @@
-html {
-  scroll-behavior: smooth;
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 5px;
-  height: 12px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #7e2572;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #7e2572;
-}
 body {
   width: 100%;
   height: 100%;
-  background-color: #fff;
 }
 .page-bg {
   background-image: url("../assets/images/bacground_img.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
-
+.background-bootom {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  height: 100px;
+  background-color: #7f7f87;
+}
+.rack {
+  background-image: url("../assets/images/product_rack.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  width: 55%;
+  z-index: 999;
+  height: 55%;
+}
+/* search satrt */
 .search-board {
   background-image: url("../assets/images/search.svg");
   background-repeat: no-repeat;
@@ -48,47 +42,13 @@ body {
   height: 35%;
 }
 
-.info-board {
-  background-image: url("../assets/images/card.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  position: absolute;
-  top: 0px;
-  right: 0%;
-  width: 35%;
-  height: 65%;
-}
-.rack {
-  position: absolute;
-  bottom: -40px;
-  left: 10%;
-  width: 55%;
-  height: 55%;
-}
-
-.rack-cont {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  width: 100%;
-  height: 480px;
-  background-image: url(../assets/images/product_rack.svg);
-  background-repeat: repeat-x;
-  background-position: center center;
-  background-size: contain;
-}
-
-/* search satrt */
 .searchbar {
-  margin-bottom: 1%;
-  margin-top: auto;
   height: 15%;
   background-color: #fff;
   border-radius: 30px;
   width: 70%;
   position: absolute;
-  bottom: 4%;
+  bottom: 6.5%;
   left: 15%;
   right: 15%;
 }
@@ -118,6 +78,17 @@ body {
 /* search end */
 
 /* card satrt */
+.info-board {
+  background-image: url("../assets/images/card.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 0px;
+  right: 0%;
+  width: 35%;
+  height: 65%;
+}
 .card_box {
   position: absolute;
   bottom: 2%;
@@ -184,61 +155,14 @@ body {
   padding-left: 20px;
 }
 /* card end */
-/* product rack satrt */
-
-.wrapper {
-  width: 96.7%;
-  /*overflow-x: scroll;*/
-  position: absolute;
-  top: -150px !important;
-}
-
-.box_container {
-  /* overflow: hidden;*/
-}
-
-.box_container ul {
-  float: left;
-  padding: 0;
-}
-
-.box_container ul li {
-  list-style-type: none;
-  line-height: 150px;
-
-  width: 100px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.box_container li img {
-  vertical-align: bottom !important;
-  border-style: none;
+.container-fluid {
   width: 100%;
-  height: auto;
-  max-height: 70px;
-
-  object-fit: contain;
-}
-
-/* product rack end */
-@media (min-width: 1200px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl {
-    max-width: 2000px;
-  }
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  margin-right: auto;
+  margin-left: auto;
 }
 @media screen and (max-width: 1200px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl {
-    max-width: 500px;
-  }
   .page-bg {
     background-image: url("../assets/images/mobile_background_img.svg");
     background-repeat: no-repeat;
@@ -246,6 +170,25 @@ body {
     background-size: cover;
     width: 100vw;
     height: 100vh;
+  }
+  .background-bootom {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    height: 80px;
+    background-color: #7f7f87;
+  }
+  .rack {
+    background-image: url("../assets/images/mobile_rack.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    bottom: 5%;
+    left: 0%;
+    width: 100%;
+    z-index: 999;
+    height: 40%;
   }
 
   .search-board {
@@ -255,9 +198,10 @@ body {
     background-size: contain;
     position: absolute;
     top: 0%;
-    left: 15%;
-    width: 70%;
-    height: 13.5%;
+    z-index: 2;
+    left: 10%;
+    width: 80%;
+    height: 15%;
   }
 
   .info-board {
@@ -266,24 +210,12 @@ body {
     background-position: center;
     background-size: contain;
     position: absolute;
-    top: 13.5%;
+    top: 14%;
     right: 20%;
     left: 20%;
     width: 60%;
     height: 40%;
   }
-  .rack {
-    background-image: url("../assets/images/mobile_rack.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-    width: 100%;
-    height: 33%;
-  }
-
   .searchbar {
     margin-bottom: 1%;
     margin-top: auto;
@@ -319,15 +251,7 @@ body {
     width: 15%;
   }
 }
-
 @media screen and (max-width: 600px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl {
-    max-width: 500px;
-  }
   .page-bg {
     background-image: url("../assets/images/mobile_background_img.svg");
     background-repeat: no-repeat;
@@ -336,30 +260,12 @@ body {
     width: 100vw;
     height: 100vh;
   }
-
-  .search-board {
-    background-image: url(../assets/images/mobile_search.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+  .background-bootom {
     position: absolute;
-    top: 0%;
-    z-index: 2;
-    left: 15%;
-    width: 70%;
-    height: 13.5%;
-  }
-  .info-board {
-    background-image: url(../assets/images/mobile_card.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    position: absolute;
-    top: 12%;
-    right: 20%;
-    left: 20%;
-    width: 60%;
-    height: 40%;
+    width: 100%;
+    bottom: 0px;
+    height: 50px;
+    background-color: #7f7f87;
   }
   .rack {
     background-image: url("../assets/images/mobile_rack.svg");
@@ -370,41 +276,36 @@ body {
     bottom: 0%;
     left: 0%;
     width: 100%;
-    height: 33%;
+    z-index: 999;
+    height: 38%;
   }
-  .rack-cont {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    width: 100%;
-    height: 234px;
-    background-image: url(../assets/images/product_rack.svg);
+
+  .search-board {
+    background-image: url("../assets/images/mobile_search.svg");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: contain;
-  }
-  .wrapper {
-    width: 95%;
-    overflow-x: scroll;
     position: absolute;
-    top: -70px !important;
+    top: 0%;
+    z-index: 2;
+    left: 10%;
+    width: 80%;
+    height: 15%;
   }
-  .box_container ul li {
-    list-style-type: none;
-    line-height: 70px;
-    width: 100px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+
+  .info-board {
+    background-image: url("../assets/images/mobile_card.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 14%;
+    right: 20%;
+    left: 20%;
+    width: 60%;
+    height: 40%;
   }
-  .box_container li img {
-    vertical-align: bottom !important;
-    border-style: none;
-    width: 100%;
-    height: auto;
-    max-height: 50px;
-    object-fit: contain;
-  }
+
   .searchbar {
     margin-bottom: 1%;
     margin-top: auto;
@@ -484,15 +385,4 @@ body {
     font-weight: 500;
     line-height: 1.2;
   }
-  .bg-bottom {
-    background-color: #7f7f87;
-    width: 100%;
-    height: 20px;
-  }
-}
-
-.bg-bottom {
-  background-color: #7f7f87;
-  width: 100%;
-  height: 50px;
 }
