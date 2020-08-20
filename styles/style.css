@@ -429,9 +429,9 @@ body {
   .wrapper {
     width: 94%;
     left: 3%;
+    top: -10% !important;
     /* overflow-x: scroll; */
     position: absolute;
-    top: -40px !important;
   }
   .box_container ul li {
     list-style-type: none;
