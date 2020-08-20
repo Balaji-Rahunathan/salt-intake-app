@@ -23,11 +23,11 @@ body {
   background-position: center;
   background-size: contain;
   position: absolute;
-  bottom: 5%;
+  bottom: 0%;
   left: 10%;
   width: 55%;
   z-index: 999;
-  height: 55%;
+  height: 50%;
 }
 /* search satrt */
 .search-board {
