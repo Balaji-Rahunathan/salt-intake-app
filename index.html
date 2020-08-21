@@ -19,58 +19,64 @@
   <body>
     <div class="container-fluid page-bg">
       <div class="search-board">
-        <div class="searchbar">
-          <input
-            class="search_input"
-            placeholder="Search"
-            type="text"
-            id="search"
-            name=""
-          />
-          <a href="#" class="search_icon"><i class="fa fa-search"></i></a>
+        <div class="search-board-continer">
+          <div class="search-box">
+            <input
+              class="search_input"
+              placeholder="Search"
+              type="text"
+              id="search"
+              name=""
+            />
+            <a href="#" class="search_icon"><i class="fa fa-search"></i></a>
+          </div>
         </div>
       </div>
       <div class="info-board">
-        <div class="card_box">
-          <div class="Card_img_box">
-            <img
-              class="card_img droppable"
-              droppable="true"
-              src="assets/images/product/prod_img4.svg"
-            />
-          </div>
-          <div class="Card_img_box">
-            <h5 class="card_title">Potato Chips</h5>
-          </div>
+        <div class="info-board-continer">
+          <div class="info-box">
+            <div class="Card_img_box">
+              <img
+                class="card_img droppable"
+                droppable="true"
+                src="assets/images/product/prod_img4.svg"
+              />
+            </div>
+            <div class="Card_img_box">
+              <h5 class="card_title">Potato Chips</h5>
+            </div>
 
-          <div class="card_flex">
-            <div class="card_perctange_box">
-              <ul class="card_perctange_list">
-                <li>
-                  Low
-                </li>
-                <li>
-                  Medium
-                </li>
-                <li>
-                  Heigh
-                </li>
-              </ul>
+            <div class="card_flex">
+              <div class="card_perctange_box">
+                <ul class="card_perctange_list">
+                  <li>
+                    Low
+                  </li>
+                  <li>
+                    Medium
+                  </li>
+                  <li>
+                    Heigh
+                  </li>
+                </ul>
+              </div>
+              <div class="card_gms_box">
+                <h1 class="card_gms_number">3</h1>
+                <h3 class="card_gms_word">Gms</h3>
+              </div>
             </div>
-            <div class="card_gms_box">
-              <h1 class="card_gms_number">3</h1>
-              <h3 class="card_gms_word">Gms</h3>
-            </div>
+            <p class="card_per_footer">*Per 100g Food Product</p>
           </div>
-          <p class="card_per_footer">*Per 100g Food Product</p>
         </div>
       </div>
       <div class="rack">
-        <div class="wrapper">
-          <div class="box_container">
-            <ul id="product_list">
-              <li></li>
-            </ul>
+        <div class="rack-continer">
+          <div class="rack-box">
+            <div class="box_container">
+              <ul id="product_list">
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -78,6 +84,12 @@
     </div>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
     <script src="controls/control.js"></script>
   </body>
 </html>
