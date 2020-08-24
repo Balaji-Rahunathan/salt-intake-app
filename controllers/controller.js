@@ -5,33 +5,36 @@ function getCurrentId(event) {
         currentId = event.target.id
     }
 
-    $("#" + currentId).draggable({ 
-         scroll: false ,
+    $("#" + currentId).draggable({
+        scroll: false,
+        cursor: "move",
         start: function (event) {
             var stylesheet = document.styleSheets[0]
             stylesheet.insertRule(`.${currentId} { top:0px !important; left:0px !important;}`, 0);
-            // disableScroll();
         },
         stop: function (event, ui) {
+            var x = event.clientX;
+            var y = event.clientY;
+            elementMouseIsOver = document.elementFromPoint(x, y);
+            
+            if (elementMouseIsOver.id !== "drop-target") {
+                var container = document.getElementsByClassName("container-" + currentId);
+                container[0].appendChild(document.getElementById(currentId))
+            }
             var target = document.getElementById(currentId);
+            target.style.transform = `translate(0px,0px)`
             target.style.top = 0
             target.style.left = 0
             target.style.right = 0
             target.style.bottom = 0
             target.style.opacity = 1
-            target.style.transform = `translate(0px,0px)`
-            var container = document.getElementsByClassName("a" + currentId);
-            container[0].appendChild(document.getElementById(currentId))
             dragging = false
         },
         drag: function (event, ui) {
-            // event.preventDefault()
-            console.log(event)
             var target = document.getElementById("page");
             target.appendChild(document.getElementById(currentId))
             var product = document.getElementsByClassName(currentId)
-            console.log(product[0].style.height)
-            product[0].style.transform = `translate(${event.clientX - 50}px,${event.clientY - 50}px)`
+            product[0].style.transform = `translate(${event.clientX - product[0].offsetWidth / 2}px,${event.clientY - product[0].offsetHeight / 2}px)`
             dragging = true
         }
     });
@@ -39,13 +42,12 @@ function getCurrentId(event) {
 
     $("#drop-target").droppable({
         drop: function (event, ui) {
-            var target = document.getElementById("draggable");
-            event.target.appendChild(document.getElementById("draggable"));
+            var target = document.getElementById(currentId);
+            event.target.appendChild(target);
             target.style.top = 0
             target.style.left = 0
             target.style.right = 0
             target.style.bottom = 0
-            target.style.opacity = 1
         }
     });
 }
