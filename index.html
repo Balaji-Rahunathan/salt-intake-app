@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=0.66, user-scalable=no">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container-fluid page-bg" id="page">
+        <div class="search-board">
+
+        </div>
+        <div class="info-board">
+            <div id=drop-target class="board">
+            </div>
+        </div>
+        <div class="rack" scroll="false">
+            <div class="rack-container">
+                <div class="product-container adraggable1" >
+                    <img src="./assets/images/products/products-72.svg"  class="product draggable1" ontouchstart="getCurrentId(event)"  draggable="true" class="draggable" id="draggable1">
+                </div>
+                <div class="product-container " >
+                    <img src="./assets/images/products/products-71.svg"  class="product draggable2" onmouseover="getCurrentId(event)" draggable="true" class="draggable" id="draggable2">
+                </div>
+                <div class="product-container " >
+                    <img src="./assets/images/products/products-70.svg"  class="product draggable3" onmouseover="getCurrentId(event)" draggable="true" class="draggable" id="draggable3">
+                </div>
+                <div class="product-container " >
+                    <img src="./assets/images/products/products-69.svg"  class="product draggable4" onmouseover="getCurrentId(event)" draggable="true" class="draggable" id="draggable4">
+                </div>
+                <div class="product-container " >
+                    <img src="./assets/images/products/products-68.svg"  class="product draggable5" onmouseover="getCurrentId(event)" draggable="true" class="draggable" id="draggable5">
+                </div>
+                <div class="product-container " >
+                    <img src="./assets/images/products/products-67.svg"  class="product draggable6" onmouseover="getCurrentId(event)" draggable="true" class="draggable" id="draggable6">
+                </div>
+                <div class="product-container " >
+                    <img src="./assets/images/products/products-66.svg"  class="product draggable7" onmouseover="getCurrentId(event)" draggable="true" class="draggable" id="draggable7">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="https://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="controllers/controller.js"></script>
+
+</html>
