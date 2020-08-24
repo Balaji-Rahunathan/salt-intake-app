@@ -1,100 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html>
+
+<head>
+    <title>Title of the document</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    />
+    <meta name="viewport" content="initial-scale=0.66, user-scalable=no">
     <link rel="stylesheet" href="styles/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <title>Salt Intake App</title>
-  </head>
-  <body>
-    <section class="background_img">
-      <div class="container">
-        <div class="row flex-column-reverse flex-md-row">
-          <div class="col-md-8">
-            <div class="row flex-column-reverse flex-md-row">
-              <div class="col-md-12">
-                <div class="search_bg">
-                  <div class="d-flex justify-content-center h-100">
-                    <div class="searchbar">
-                      <input
-                        class="search_input"
-                        placeholder="Search"
-                        type="text"
-                        id="search"
-                        name=""
-                      />
-                      <a href="#" class="search_icon"
-                        ><i class="fa fa-search"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="product_rack">
-                  <div class="box_abosutly">
-                    <div class="wrapper">
-                      <div class="box_container">
-                        <ul id="product_list">
-                          <li></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 card_bg">
-            <div class="card_box">
-              <div class="Card_img_box">
-                <img
-                  class="card_img droppable"
-                  droppable="true"
-                  src="assets/images/product/prod_img4.svg"
-                />
-              </div>
-              <div class="Card_img_box">
-                <h5 class="card_title">Potato Chips</h5>
-              </div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
 
-              <div class="card_flex">
-                <div class="card_perctange_box">
-                  <ul class="card_perctange_list">
-                    <li>
-                      Low
-                    </li>
-                    <li>
-                      Medium
-                    </li>
-                    <li>
-                      Heigh
-                    </li>
-                  </ul>
-                </div>
-                <div class="card_gms_box">
-                  <h1 class="card_gms_number">3</h1>
-                  <h3 class="card_gms_word">Gms</h3>
-                </div>
-              </div>
-              <p class="card_per_footer">*Per 100g Food Product</p>
-            </div>
-          </div>
+<body>
+
+    <div class="container-fluid page-bg" id="page">
+        <div class="search-board">
+
         </div>
-      </div>
-    </section>
+        <div class="info-board">
+            <div id=drop-target class="board">
+            </div>
+        </div>
+        <div class="rack" scroll="false">
+            <div class="rack-container">
+                <div class="product-container adraggable1" >
+                    <img src="./assets/images/products/products-72.svg"  class="product draggable1" ontouchstart="getCurrentId(event)"  draggable="true" class="draggable" id="draggable1">
+                </div>
+                <div class="product-container " >
+                    <img src="./assets/images/products/products-71.svg"  class="product draggable2" onmouseover="getCurrentId(event)" draggable="true" class="draggable" id="draggable2">
+                </div>
+                <div class="product-container " >
+                    <img src="./assets/images/products/products-70.svg"  class="product draggable3" onmouseover="getCurrentId(event)" draggable="true" class="draggable" id="draggable3">
+                </div>
+                <div class="product-container " >
+                    <img src="./assets/images/products/products-69.svg"  class="product draggable4" onmouseover="getCurrentId(event)" draggable="true" class="draggable" id="draggable4">
+                </div>
+                <div class="product-container " >
+                    <img src="./assets/images/products/products-68.svg"  class="product draggable5" onmouseover="getCurrentId(event)" draggable="true" class="draggable" id="draggable5">
+                </div>
+                <div class="product-container " >
+                    <img src="./assets/images/products/products-67.svg"  class="product draggable6" onmouseover="getCurrentId(event)" draggable="true" class="draggable" id="draggable6">
+                </div>
+                <div class="product-container " >
+                    <img src="./assets/images/products/products-66.svg"  class="product draggable7" onmouseover="getCurrentId(event)" draggable="true" class="draggable" id="draggable7">
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="https://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="controllers/controller.js"></script>
 
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="controls/control.js"></script>
-  </body>
 </html>
