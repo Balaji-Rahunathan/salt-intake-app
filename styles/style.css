@@ -22,9 +22,9 @@ body {
 }
 .rack-container {
   background-image: url("../assets/images/product_rack.svg");
-  background-repeat: repeat;
   background-position: center;
   background-size: contain;
+  background-repeat: repeat;
   background-color: blue;
   width: 100vw;
   height: 27.5vw;
@@ -38,10 +38,10 @@ body {
   background-position: center;
   background-size: contain;
   position: absolute;
-  top: -80px;
-  left: 20%;
-  width: 35%;
-  height: 35%;
+  top: 0px;
+  left: 15vw;
+  width: 30vw;
+  height: 15vw;
 }
 
 .info-board {
@@ -51,29 +51,28 @@ body {
   background-size: contain;
   position: absolute;
   top: 0px;
-  right: 0%;
-  width: 35%;
-  height: 65%;
+  right: 12vw;
+  width: 21vw;
+  height: 35vw;
 }
 
 .rack-shelf {
-  background-color: blue;
   width: 10%;
   height: 10%;
 }
 
 .board {
-  background-color: blue ; 
-  width: 55%;
-  height: 55%;
   position: absolute;
-  bottom: 0px;
-  left: 25%;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  z-index: 100;
 }
 
 .product {
-  width:8vw;
-  height:8vw;
+  width: 8vw;
+  height: 8vw;
 }
 
 .product-container {
@@ -83,5 +82,38 @@ body {
   object-fit: contain;
   justify-content: center;
   align-items: flex-end;
-  z-index: 100000;
+}
+
+.content-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+}
+
+.info-image {
+  width: 20%;
+}
+
+.search-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  left: 0;
+}
+
+.search-input {
+  width: 70%;
+  height: 50%;
+  border: 1px solid transparent;
+  border-radius:20px;
+  padding-left: 5%;
+  outline: none;
+  padding-right: 5%;
+  font-size:1vw;
 }
