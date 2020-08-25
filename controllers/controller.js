@@ -9,7 +9,7 @@ function getCurrentId(event) {
 // var pageHeight = document.getElementById("page")
 // pageHeight.style.height = window.innerHeight
 
-var url = "../assets/data/product.json";         
+var url = "../data/product.json";         
 $.getJSON(url, function (data) {
     $.each(data, function (key, model) {
         console.log(model._id) 
