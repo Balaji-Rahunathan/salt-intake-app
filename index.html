@@ -23,10 +23,19 @@
             <div id=drop-target class="board">
             </div>
             <div class="content-container">
+                <img id="productImage" />
                 <div id="name"></div>
-                <img id="productImage" class="info-image" />
-                <div id="riskFactor"></div>
-                <div id='saltLevel'></div>
+                <div class="risk-salt-seperator">
+                    <div class="risk-container">
+                        <div id="high"><span class="indicator green">12</span>High</div>
+                        <div id="medium"><span class="indicator yellow">12</span>Medium</div>
+                        <div id="low"><span class="indicator red">12</span>Low</div>
+                    </div>
+                    <div class="salt-container">
+                        <div id='saltLevel'></div>
+                        <div id='mg'>mg</div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="rack" scroll="false">

@@ -4,48 +4,48 @@
     "name": "Apple",
     "image": "./assets/images/products/products-01.svg",
     "riskFactor": "high",
-    "saltLevel": "1mg"
+    "saltLevel": "1"
   },
   {
     "_id": "2",
     "name": "orange",
     "image": "./assets/images/products/products-02.svg",
-    "riskFactor": "high",
-    "saltLevel": "1mg"
+    "riskFactor": "low",
+    "saltLevel": "2"
   },
   {
     "_id": "3",
     "name": "pineapple",
     "image": "./assets/images/products/products-03.svg",
-    "riskFactor": "high",
-    "saltLevel": "1mg"
+    "riskFactor": "medium",
+    "saltLevel": "3"
   },
   {
     "_id": "4",
     "name": "guava",
     "image": "./assets/images/products/products-04.svg",
-    "riskFactor": "high",
-    "saltLevel": "1mg"
+    "riskFactor": "low",
+    "saltLevel": "4"
   },
   {
     "_id": "5",
     "name": "grapes",
     "image": "./assets/images/products/products-05.svg",
     "riskFactor": "high",
-    "saltLevel": "1mg"
+    "saltLevel": "5"
   },
   {
     "_id": "6",
     "name": "kiwi",
     "image": "./assets/images/products/products-06.svg",
-    "riskFactor": "high",
-    "saltLevel": "1mg"
+    "riskFactor": "medium",
+    "saltLevel": "6"
   },
   {
     "_id": "7",
     "name": "dates",
     "image": "./assets/images/products/products-07.svg",
     "riskFactor": "high",
-    "saltLevel": "1mg"
+    "saltLevel": "7"
   }
 ]

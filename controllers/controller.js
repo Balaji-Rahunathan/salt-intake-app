@@ -6,6 +6,9 @@ function getCurrentId(event) {
     }
 }
 
+// var pageHeight = document.getElementById("page")
+// pageHeight.style.height = window.innerHeight
+
 var url = "../assets/data/product.json";         
 $.getJSON(url, function (data) {
     $.each(data, function (key, model) {
@@ -31,7 +34,6 @@ $.getJSON(url, function (data) {
 
     $("#" + "draggable"+model._id).draggable({
         scroll: false,
-        // cursor: "move",
         start: function (event) {
             var stylesheet = document.styleSheets[0]
             stylesheet.insertRule(`.${"draggable"+model._id} { top:0px !important; left:0px !important;}`, 0);
@@ -69,11 +71,28 @@ $.getJSON(url, function (data) {
             var child = document.getElementById("drop-target").firstChild
             var name = document.getElementById("name") 
             var image = document.getElementById("productImage") 
-            var riskFactor = document.getElementById("riskFactor") 
             var saltLevel = document.getElementById("saltLevel") 
+            var mg = document.getElementById("mg") 
+            var high = document.getElementById("high")
+            var medium = document.getElementById("medium")
+            var low = document.getElementById("low")
+            if(target.getAttribute("riskFactor")=="high"){
+                high.style.opacity = 1
+                medium.style.opacity = 0.3
+                low.style.opacity = 0.3
+            }else if(target.getAttribute("riskFactor")=="medium"){
+                high.style.opacity = 0.3
+                medium.style.opacity = 1
+                low.style.opacity = 0.3
+            }else if(target.getAttribute("riskFactor")=="low"){
+                high.style.opacity = 0.3
+                medium.style.opacity = 0.3
+                low.style.opacity = 1
+            }
+            mg.style.opacity =1
             saltLevel.innerHTML =  target.getAttribute("saltLevel")
-            riskFactor.innerHTML =  target.getAttribute("riskFactor")
             image.src =  target.getAttribute("image")
+            image.style.opacity = 1
             name.innerHTML =  target.getAttribute("name")
             event.target.removeChild(child)
             event.target.appendChild(target);
