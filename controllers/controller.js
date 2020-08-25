@@ -52,7 +52,6 @@ $.getJSON(url, function (data) {
             target.style.left = 0
             target.style.right = 0
             target.style.bottom = 0
-            target.style.opacity = 1
             dragging = false
         },
         drag: function (event, ui) {
