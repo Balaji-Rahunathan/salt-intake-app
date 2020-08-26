@@ -1,5 +1,8 @@
+"use strict";
+
 var currentId = "#draggable1";
 var dragging = false;
+
 function getCurrentId(event) {
   if (!dragging) {
     currentId = event.target.id;
@@ -7,6 +10,7 @@ function getCurrentId(event) {
 }
 
 var _iOSDevice = !!navigator.platform.match(/iPhone|iPod/);
+
 var pageHeight = document.getElementById("page");
 
 if (_iOSDevice) {
@@ -14,24 +18,22 @@ if (_iOSDevice) {
 } else {
   pageHeight.style.height = window.innerHeight;
 }
+
 var input = document.getElementById("search");
 var parent = document.getElementById("rack-container");
-
 var url = "../data/product.json";
-
 onSearch();
 
 function onSearch() {
   removeAllChildNodes(parent);
   $.getJSON(url, function (data) {
-    var filteredData = data.filter((filter) => {
+    var filteredData = data.filter(function (filter) {
       if (input.value === "") {
         return filter;
       } else {
         return filter.name.toUpperCase().includes(input.value.toUpperCase());
       }
     });
-
     $.each(filteredData, function (key, model) {
       var rack = document.getElementById("rack-container");
       var productContainer = document.createElement("DIV");
@@ -51,53 +53,40 @@ function onSearch() {
       product.src = model.image;
       productContainer.appendChild(product);
       rack.appendChild(productContainer);
-
       $("#" + "draggable" + model._id).draggable({
         scroll: false,
-        start: function (event) {
+        start: function start(event) {
           var stylesheet = document.styleSheets[0];
-          stylesheet.insertRule(
-            `.${
-              "draggable" + model._id
-            } { top:0px !important; left:0px !important;}`,
-            0
-          );
+          stylesheet.insertRule(".".concat("draggable" + model._id, " { top:0px !important; left:0px !important;}"), 0);
         },
-        stop: function (event, ui) {
+        stop: function stop(event, ui) {
           var x = event.clientX;
           var y = event.clientY;
           elementMouseIsOver = document.elementFromPoint(x, y);
+
           if (elementMouseIsOver.id !== "drop-target") {
-            var container = document.getElementsByClassName(
-              "container-" + "draggable" + model._id
-            );
-            container[0].appendChild(
-              document.getElementById("draggable" + model._id)
-            );
+            var container = document.getElementsByClassName("container-" + "draggable" + model._id);
+            container[0].appendChild(document.getElementById("draggable" + model._id));
           }
+
           var target = document.getElementById("draggable" + model._id);
-          target.style.transform = `translate(0px,0px)`;
+          target.style.transform = "translate(0px,0px)";
           target.style.top = 0;
           target.style.left = 0;
           target.style.right = 0;
           target.style.bottom = 0;
           dragging = false;
         },
-        drag: function (event, ui) {
+        drag: function drag(event, ui) {
           var target = document.getElementById("page");
           target.appendChild(document.getElementById("draggable" + model._id));
-          var product = document.getElementsByClassName(
-            "draggable" + model._id
-          );
-          product[0].style.transform = `translate(${
-            event.clientX - product[0].offsetWidth / 2
-          }px,${event.clientY - product[0].offsetHeight / 2}px)`;
+          var product = document.getElementsByClassName("draggable" + model._id);
+          product[0].style.transform = "translate(".concat(event.clientX - product[0].offsetWidth / 2, "px,").concat(event.clientY - product[0].offsetHeight / 2, "px)");
           dragging = true;
-        },
+        }
       });
-
       $("#drop-target").droppable({
-        drop: function (event, ui) {
+        drop: function drop(event, ui) {
           $("#drop_here").css("display", "none");
           var target = document.getElementById(currentId);
           var child = document.getElementById("drop-target").firstChild;
@@ -108,6 +97,7 @@ function onSearch() {
           var high = document.getElementById("high");
           var medium = document.getElementById("medium");
           var low = document.getElementById("low");
+
           if (target.getAttribute("riskFactor") == "high") {
             high.style.opacity = 1;
             medium.style.opacity = 0.3;
@@ -121,6 +111,7 @@ function onSearch() {
             medium.style.opacity = 0.3;
             low.style.opacity = 1;
           }
+
           mg.style.opacity = 1;
           saltLevel.innerHTML = target.getAttribute("saltLevel");
           image.src = target.getAttribute("image");
@@ -133,7 +124,7 @@ function onSearch() {
           target.style.left = 0;
           target.style.right = 0;
           target.style.bottom = 0;
-        },
+        }
       });
     });
   });
