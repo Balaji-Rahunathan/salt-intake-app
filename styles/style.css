@@ -222,7 +222,7 @@ body {
   }
   .rack-container {
 
-    width: 200vw;
+    width: 320vw;
     /* height: 50vw; */
     display: flex;
     flex-wrap: wrap;
