@@ -4,147 +4,112 @@
         "name": "porridge",
         "image": "./assets/images/products/products_porridge.svg",
         "riskFactor": "low",
-        "saltLevel": "<0.3"
+        "saltLevel": "0.3"
       },
       {
         "_id": "2",
         "name": "shredded wheat",
         "image": "./assets/images/products/products_wheat.svg",
         "riskFactor": "low",
-        "saltLevel": "<0.3"
+        "saltLevel": "0.3"
       },
       {
         "_id": "3",
         "name": "rice",
         "image": "./assets/images/products/products_rice.svg",
         "riskFactor": "low",
-        "saltLevel": "<0.3"
+        "saltLevel": "0.3"
       },
       {
         "_id": "4",
         "name": "pasta",
         "image": "./assets/images/products/products_pasta.svg",
         "riskFactor": "low",
-        "saltLevel": "<0.3"
+        "saltLevel": "0.3"
       },
       {
         "_id": "5",
         "name": "couscous",
         "image": "./assets/images/products/products_couscous.svg",
         "riskFactor": "low",
-        "saltLevel": "<0.3"
-      },
-      {
-        "_id": "6",
-        "name": "quinoa",
-        "image": "./assets/images/products/",
-        "riskFactor": "low",
-        "saltLevel": "<0.3"
+        "saltLevel": "0.3"
       },
       {
         "_id": "7",
         "name":"potatoes",
         "image": "./assets/images/products/products_potato chips.svg",
         "riskFactor": "low",
-        "saltLevel": "<0.3"
+        "saltLevel": "0.3"
       },
       {
         "_id": "8",
         "name":"fresh fruits",
         "image": "./assets/images/products/products_farm fresh.svg",
         "riskFactor": "low",
-        "saltLevel": "<0.3"
+        "saltLevel": "0.3"
       },
       {
         "_id": "9",
         "name":"dried fruits",
         "image": "./assets/images/products/products_dried fruits.svg",
         "riskFactor": "low",
-        "saltLevel": "<0.3"
+        "saltLevel": "0.3"
       },
       {
         "_id": "10",
         "name":"vegetables",
         "image": "./assets/images/products/products_vegetabls.svg",
         "riskFactor": "low",
-        "saltLevel": "<0.3"
-      },
-      {
-        "_id": "11",
-        "name":"pulses",
-        "image": "./assets/images/products/",
-        "riskFactor": "low",
-        "saltLevel": "<0.3"
+        "saltLevel": "0.3"
       },
       {
         "_id": "12",
         "name":"milk",
         "image": "./assets/images/products/products_milk.svg",
         "riskFactor": "low",
-        "saltLevel": "<0.3"
+        "saltLevel": "0.3"
       },
       {
         "_id": "13",
         "name":"yogurts",
         "image": "./assets/images/products/products_yogurt.svg",
         "riskFactor": "low",
-        "saltLevel": "<0.3"
-      },
-      {
-        "_id": "14",
-        "name":"olive oil",
-        "image": "./assets/images/products/",
-        "riskFactor": "low",
-        "saltLevel": "<0.3"
+        "saltLevel": "0.3"
       },
       {
         "_id": "15",
         "name":"rapeseed oil",
         "image": "./assets/images/products/products_rapeseed.svg",
         "riskFactor": "low",
-        "saltLevel": "<0.3"
+        "saltLevel": "0.3"
       },
       {
         "_id": "16",
         "name":"meat",
         "image": "./assets/images/products/products_meat products.svg",
         "riskFactor": "low",
-        "saltLevel": "<0.3"
+        "saltLevel": "0.3"
       },
       {
         "_id": "17",
         "name":"fish",
         "image": "./assets/images/products/products_fish.svg",
         "riskFactor": "low",
-        "saltLevel": "<0.3"
+        "saltLevel": "0.3"
       },
       {
         "_id": "18",
         "name":"rice cakes",
         "image": "./assets/images/products/products_rice cakes.svg",
         "riskFactor": "low",
-        "saltLevel": "<0.3"
+        "saltLevel": "0.3"
       },
       {
         "_id": "19",
         "name":"vinegar",
         "image": "./assets/images/products/products_vinegar-51.svg",
         "riskFactor": "low",
-        "saltLevel": "<0.3"
-      },
-      {
-        "_id": "20",
-        "name":"herbs",
-        "image": "./assets/images/products/",
-        "riskFactor": "low",
-        "saltLevel": "<0.3"
-      },
-      {
-        "_id": "21",
-        "name":"spices",
-        "image": "./assets/images/products/",
-        "riskFactor": "low",
-        "saltLevel": "<0.3"
+        "saltLevel": "0.3"
       },
       {
         "_id": "22",
@@ -171,20 +136,6 @@
         "_id": "25",
         "name":"cottage cheese",
         "image": "./assets/images/products/products_cheese.svg",
-        "riskFactor": "medium",
-        "saltLevel": "0.3-1.5"
-      },
-      {
-        "_id": "26",
-        "name":"mozzarella cheese",
-        "image": "./assets/images/products/",
-        "riskFactor": "medium",
-        "saltLevel": "0.3-1.5"
-      },
-      {
-        "_id": "27",
-        "name":"cream cheese",
-        "image": "./assets/images/products/",
         "riskFactor": "medium",
         "saltLevel": "0.3-1.5"
       },
@@ -238,117 +189,74 @@
         "saltLevel": "0.3-1.5"
       },
       {
-        "_id": "35",
-        "name":"stock cubes",
-        "image": "./assets/images/products/",
-        "riskFactor": "high",
-        "saltLevel": ">1.5"
-      },
-      {
         "_id": "36",
         "name":"pizza",
         "image": "./assets/images/products/products_pizza.svg",
         "riskFactor": "high",
-        "saltLevel": ">1.5"
+        "saltLevel": "1.5"
       },
       {
         "_id": "37",
         "name":"instant noodles",
         "image": "./assets/images/products/products_instant noodles.svg",
         "riskFactor": "high",
-        "saltLevel": ">1.5"
+        "saltLevel": "1.5"
       },
       {
         "_id": "38",
         "name":"pate",
         "image": "./assets/images/products/products_pate.svg",
         "riskFactor": "high",
-        "saltLevel": ">1.5"
+        "saltLevel": "1.5"
       },
       {
         "_id": "39",
         "name":"ham",
         "image": "./assets/images/products/products_ham.svg",
         "riskFactor": "high",
-        "saltLevel": ">1.5"
+        "saltLevel": "1.5"
       },
       {
         "_id": "40",
         "name":"bacon",
         "image": "./assets/images/products/products_bacon.svg",
         "riskFactor": "high",
-        "saltLevel": ">1.5"
+        "saltLevel": "1.5"
       },
       {
         "_id": "41",
         "name":"cornered beef",
         "image": "./assets/images/products/products_corned beef.svg",
         "riskFactor": "high",
-        "saltLevel": ">1.5"
-      },
-      {
-        "_id": "42",
-        "name":"burgers",
-        "image": "./assets/images/products/",
-        "riskFactor": "high",
-        "saltLevel": ">1.5"
-      },
-      {
-        "_id": "43",
-        "name":"sausages",
-        "image": "./assets/images/products/",
-        "riskFactor": "high",
-        "saltLevel": ">1.5"
+        "saltLevel": "1.5"
       },
       {
         "_id": "44",
         "name":"smoked fish",
         "image": "./assets/images/products/products_smoked fish.svg",
         "riskFactor": "high",
-        "saltLevel": ">1.5"
+        "saltLevel": "1.5"
       },
       {
         "_id": "45",
         "name":"prawn",
         "image": "./assets/images/products/products_prawn.svg",
         "riskFactor": "high",
-        "saltLevel": ">1.5"
+        "saltLevel": "1.5"
       },
       {
         "_id": "46",
         "name":"meat pies",
         "image": "./assets/images/products/products_meat pies.svg",
         "riskFactor": "high",
-        "saltLevel": ">1.5"
-      },
-      
-      {
-        "_id": "47",
-        "name":"sausage rolls",
-        "image": "./assets/images/products/",
-        "riskFactor": "high",
-        "saltLevel": ">1.5"
-      },
-      {
-        "_id": "48",
-        "name":"savoury snacks",
-        "image": "./assets/images/products/",
-        "riskFactor": "high",
-        "saltLevel": ">1.5"
-      },
-      {
-        "_id": "49",
-        "name":"salted popcorn",
-        "image": "./assets/images/products/",
-        "riskFactor": "high",
-        "saltLevel": ">1.5"
+        "saltLevel": "1.5"
       },
       {
         "_id": "50",
         "name":"crisps",
         "image": "./assets/images/products/products_crisps.svg",
         "riskFactor": "high",
-        "saltLevel": ">1.5"
+        "saltLevel": "1.5"
       },
      
       {
@@ -356,55 +264,34 @@
         "name":"salted nuts",
         "image": "./assets/images/products/products_salted nuts.svg",
         "riskFactor": "high",
-        "saltLevel": ">1.5"
-      },
-      {
-        "_id": "52",
-        "name":"olives",
-        "image": "./assets/images/products/",
-        "riskFactor": "high",
-        "saltLevel": ">1.5"
+        "saltLevel": "1.5"
       },
       {
         "_id": "53",
         "name":"sundried tomatoes",
         "image": "./assets/images/products/products_sundried tomatoes.svg",
         "riskFactor": "high",
-        "saltLevel": ">1.5"
+        "saltLevel": "1.5"
       },
       {
         "_id": "54",
         "name":"soy sauce",
         "image": "./assets/images/products/products_soy sauce.svg",
         "riskFactor": "high",
-        "saltLevel": ">1.5"
-      },
-      {
-        "_id": "55",
-        "name":"oyster sauce",
-        "image": "./assets/images/products/",
-        "riskFactor": "high",
-        "saltLevel": ">1.5"
+        "saltLevel": "1.5"
       },
       {
         "_id": "56",
         "name":"worcestershire sauce",
         "image": "./assets/images/products/products_worcester shire sauce.svg",
         "riskFactor": "high",
-        "saltLevel": ">1.5"
-      },
-      {
-        "_id": "57",
-        "name":"brown sauce",
-        "image": "./assets/images/products/",
-        "riskFactor": "high",
-        "saltLevel": ">1.5"
+        "saltLevel": "1.5"
       },
       {
         "_id": "58",
         "name":"tomato ketchup",
         "image": "./assets/images/products/products_tomato soup.svg",
         "riskFactor": "high",
-        "saltLevel": ">1.5"
+        "saltLevel": "1.5"
       }
 ]

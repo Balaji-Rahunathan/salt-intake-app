@@ -1,69 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Title of the document</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="initial-scale=0.66, user-scalable=no" />
+    <meta name="viewport" content="initial-scale=0.66, user-scalable=no">
     <link rel="stylesheet" href="styles/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <title>Document</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="container-fluid page-bg" id="page">
-      <div class="search-board">
-        <div class="search-container">
-          <input
-            type="text"
-            id="search"
-            onkeyup="onSearch()"
-            name="search"
-            class="search-input"
-            placeholder="Search"
-          />
-          <a href="#" class="search_icon"><i class="fa fa-search"></i></a>
-        </div>
-      </div>
-      <div class="info-board">
-        <div id="drop-target" class="board"></div>
-        <div class="content-container">
-          <p id="drop_here">
-            <i class="fa fa-arrow-down drop-icon" aria-hidden="true"></i><br />
-            Product Drop here
-          </p>
-          <img id="productImage" />
-          <div id="name"></div>
-          <div class="risk-salt-seperator">
-            <div class="risk-container">
-              <div id="low"><span class="indicator green">12</span>Low</div>
-              <div id="medium">
-                <span class="indicator yellow">12</span>Medium
-              </div>
-              <div id="high"><span class="indicator red">12</span>High</div>
+        <div class="search-board">
+            <div class="search-container">
+                <input type="text" id="search" onkeyup="onSearch()" name="search" class="search-input" placeholder="Search">
             </div>
-            <div class="salt-container">
-              <div id="saltLevel"></div>
-              <div id="mg">Gms</div>
-            </div>
-          </div>
-          <p id="fooder_cont" style="display: none;">*Per 100g Food Product</p>
         </div>
-      </div>
-      <div class="rack" scroll="false">
-        <div class="rack-container" id="rack-container"></div>
-      </div>
+        <div class="info-board">
+            <div id=drop-target class="board">
+            </div>
+            <div class="content-container">
+                <img id="productImage" />
+                <div id="name"></div>
+                <div class="risk-salt-seperator">
+                    <div class="risk-container">
+                        <div id="low"><span class="indicator green">12</span>Low</div>
+                        <div id="medium"><span class="indicator yellow">12</span>Medium</div>
+                        <div id="high"><span class="indicator red">12</span>High</div>
+                    </div>
+                    <div class="salt-container">
+                        <div id='saltLevel'></div>
+                        <div id='mg'>Gms</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rack" scroll="false">
+            <div class="rack-container" id="rack-container">
+            </div>
+        </div>
     </div>
-  </body>
-  <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
-  <script src="controllers/controller.js"></script>
+
+</body>
+<script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="https://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="controllers/controller.js"></script>
+
 </html>

@@ -28,13 +28,13 @@ body {
   background-position: center;
   background-size: contain;
   background-repeat: repeat; */
-  width: 100vw;
+  width: 180vw;
   /* height: 27.5vw; */
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items:flex-start;
 }
 
 .search-board {
@@ -91,15 +91,15 @@ body {
 
 .content-container {
   position: absolute;
-  display: flex;
-  flex-direction: column;
+  display: flex; 
+  flex-direction: column; 
   /* justify-content: center; */
-  align-items: center;
+  align-items:center;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 60%;
-  padding: 0px 1.5vw 1.5vw 1.5vw;
+  padding:0px 1.5vw 1.5vw 1.5vw;
 }
 
 #productImage {
@@ -108,19 +108,19 @@ body {
   opacity: 0;
 }
 
-#name {
-  font-size: 1.5vw;
-  text-transform: capitalize;
+#name{
+  font-size:1.5vw;
+  text-transform:capitalize;
 }
-.risk-salt-seperator {
+.risk-salt-seperator{
   display: flex;
   flex-direction: row;
-  width: 100%;
-  height: 60%;
+  width:100%;
+  height:60%;
   justify-content: space-between;
   align-items: center;
 }
-.salt-container {
+.salt-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,52 +129,52 @@ body {
   width: 50%;
   height: 100%;
 }
-#saltLevel {
-  font-size: 4vw;
-  height: 4vw;
-  color: purple;
-  font-weight: bolder;
+#saltLevel{
+  font-size:2vw;
+  height:2vw;
+  color:purple;
+  font-weight:bolder;
 }
-#mg {
-  font-size: 2vw;
-  font-weight: bolder;
+#mg{
+  font-size:2vw;
+  font-weight:bolder;
+  opacity:0
+}
+#high{
   opacity: 0;
 }
-#high {
+#medium{
   opacity: 0;
 }
-#medium {
+#low{
   opacity: 0;
 }
-#low {
-  opacity: 0;
-}
-.indicator {
-  margin: 15px 5px;
-  width: 0.1vw;
-  height: 0.1vw;
-  color: transparent;
+.indicator{
+  margin:15px 5px;
+  width:0.1vw;
+  height:0.1vw;
+  color:transparent;
   font-size: 1vw;
 }
-.green {
+.green{
   border-color: green;
-  background-color: green;
+  background-color:green;
 }
-.yellow {
+.yellow{
   border-color: yellow;
-  background-color: yellow;
+  background-color:yellow;
 }
-.red {
+.red{
   border-color: red;
-  background-color: red;
+  background-color:red;
 }
-.risk-container {
+.risk-container{
   display: flex;
   flex-direction: column;
 }
-.risk-container div {
-  font-size: 1.2vw;
-  font-weight: bold;
+.risk-container div{
+  font-size:1.2vw;
+  font-weight:bold;
   opacity: 0.8;
 }
 
@@ -190,50 +190,16 @@ body {
 }
 
 .search-input {
+  width: 70%;
   height: 50%;
   border: 1px solid transparent;
-  border-radius: 20px;
+  border-radius:20px;
   padding-left: 5%;
   outline: none;
   padding-right: 5%;
-
-  color: #000;
-  background: #fff;
-
-  font-size: 1vw;
-  border-radius: 30px 0% 0% 30px;
-  width: 60%;
-}
-.search_icon {
-  height: 50%;
-  width: 10%;
-  font-size: 1vw;
-  float: right;
-  display: flex;
-  background: #7e2572;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0% 30px 30px 0%;
-  color: white;
-  text-decoration: none;
+  font-size:1vw;
 }
 
-#drop_here {
-  font-size: 24px;
-  margin-top: 25%;
-  font-weight: 600;
-  color: #263b3b;
-  text-align: center;
-}
-.drop-icon {
-  color: #8c0863;
-  font-size: 64px !important;
-  font-weight: bold;
-}
-#fooder_cont {
-  font-size: 14px;
-  text-align: left !important;
-}
 @media only screen and (max-width: 800px) {
   .page-bg {
     background-image: url("../assets/images/bacground_img.svg");
@@ -255,6 +221,7 @@ body {
     overflow-x: auto;
   }
   .rack-container {
+
     width: 320vw;
     /* height: 50vw; */
     display: flex;
@@ -309,35 +276,35 @@ body {
   }
   .content-container {
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex; 
+    flex-direction: column; 
+    align-items:center;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 83%;
-    padding: 0px 1.5vw 1.5vw 1.5vw;
+    padding:0px 1.5vw 1.5vw 1.5vw;
   }
-
+  
   #productImage {
     width: 40%;
     height: 40%;
     opacity: 0;
   }
-
-  #name {
-    font-size: 3vw;
-    text-transform: capitalize;
+  
+  #name{
+    font-size:3vw;
+    text-transform:capitalize;
   }
-  .risk-salt-seperator {
+  .risk-salt-seperator{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 70%;
+    width:100%;
+    height:70%;
     justify-content: space-between;
     align-items: center;
   }
-  .salt-container {
+  .salt-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -346,52 +313,52 @@ body {
     width: 50%;
     height: 100%;
   }
-  #saltLevel {
-    font-size: 7vw;
-    height: 7vw;
-    color: purple;
-    font-weight: bolder;
+  #saltLevel{
+    font-size:7vw;
+    height:7vw;
+    color:purple;
+    font-weight:bolder;
   }
-  #mg {
-    font-size: 4vw;
-    font-weight: bolder;
+  #mg{
+    font-size:4vw;
+    font-weight:bolder;
+    opacity:0
+  }
+  #high{
     opacity: 0;
   }
-  #high {
+  #medium{
     opacity: 0;
   }
-  #medium {
+  #low{
     opacity: 0;
   }
-  #low {
-    opacity: 0;
-  }
-  .indicator {
-    margin: 15px 5px;
-    width: 0.1vw;
-    height: 0.1vw;
-    color: transparent;
+  .indicator{
+    margin:15px 5px;
+    width:0.1vw;
+    height:0.1vw;
+    color:transparent;
     font-size: 2.5vw;
   }
-  .green {
+  .green{
     border-color: green;
-    background-color: green;
+    background-color:green;
   }
-  .yellow {
+  .yellow{
     border-color: yellow;
-    background-color: yellow;
+    background-color:yellow;
   }
-  .red {
+  .red{
     border-color: red;
-    background-color: red;
+    background-color:red;
   }
-  .risk-container {
+  .risk-container{
     display: flex;
     flex-direction: column;
   }
-  .risk-container div {
-    font-size: 2.5vw;
-    font-weight: bold;
+  .risk-container div{
+    font-size:2.5vw;
+    font-weight:bold;
     opacity: 0.8;
   }
 
@@ -409,48 +376,13 @@ body {
     left: 0;
   }
   .search-input {
-    width: 60%;
+    width: 70%;
     height: 60%;
-    color: #000;
     border: 1px solid transparent;
-    border-radius: 20px;
+    border-radius:20px;
     padding-left: 5%;
     outline: none;
     padding-right: 5%;
-    border-radius: 30px 0% 0% 30px;
-
-    font-size: 2vw;
-    background: #fff;
-  }
-
-  .search_icon {
-    height: 60%;
-    width: 10%;
-    font-size: 2vw;
-    float: right;
-    display: flex;
-    background: #7e2572;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0% 30px 30px 0%;
-    color: white;
-    text-decoration: none;
-  }
-
-  #drop_here {
-    font-size: 18px;
-    margin-top: 25%;
-    font-weight: 600;
-    color: #263b3b;
-    text-align: center;
-  }
-  .drop-icon {
-    color: #8c0863;
-    font-size: 42px !important;
-    font-weight: bold;
-  }
-  #fooder_cont {
-    font-size: 12px;
-    text-align: left !important;
+    font-size:15px;
   }
 }
