@@ -88,6 +88,7 @@ function onSearch() {
       $("#drop-target").droppable({
         drop: function drop(event, ui) {
           $("#drop_here").css("display", "none");
+          $("#fooder_cont").css("display", "block");
           var target = document.getElementById(currentId);
           var child = document.getElementById("drop-target").firstChild;
           var name = document.getElementById("name");
