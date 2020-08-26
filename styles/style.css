@@ -102,6 +102,48 @@ body {
   padding:0px 1.5vw 1.5vw 1.5vw;
 }
 
+.info-container {
+  position: absolute;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-around;
+  align-items:center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  padding:0px 1.5vw 1.5vw 1.5vw;
+}
+
+.info-arrow{
+  width: 30%;
+  height: 30%;
+  font-size:10vw !important;
+  text-align: center;
+  color:green;
+  position: absolute;
+  top:1vw;
+  right: 7.2vw;  
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {top:1vw}
+  /* 25%  {top:2vw} */
+  50%  {top:2vw}
+  100% {top:1vw}
+}
+
+.info-text{
+  padding-top: 8vw;
+  font-size:1.5vw;
+  font-weight:bolder;
+  text-align: center;
+}
+
+
 #productImage {
   width: 40%;
   height: 40%;
@@ -190,14 +232,30 @@ body {
 }
 
 .search-input {
-  width: 70%;
   height: 50%;
   border: 1px solid transparent;
-  border-radius:20px;
+  border-radius: 20px;
   padding-left: 5%;
   outline: none;
   padding-right: 5%;
-  font-size:1vw;
+  color: #000;
+  background: #fff;
+  font-size: 1vw;
+  border-radius: 30px 0% 0% 30px;
+  width: 60%;
+}
+.search_icon {
+  height: 50%;
+  width: 10%;
+  font-size: 1vw;
+  float: right;
+  display: flex;
+  background: #7e2572;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0% 30px 30px 0%;
+  color: white;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 800px) {
@@ -376,13 +434,30 @@ body {
     left: 0;
   }
   .search-input {
-    width: 70%;
+    width: 60%;
     height: 60%;
+    color: #000;
     border: 1px solid transparent;
-    border-radius:20px;
+    border-radius: 20px;
     padding-left: 5%;
     outline: none;
     padding-right: 5%;
-    font-size:15px;
+    border-radius: 30px 0% 0% 30px;
+   font-size: 2vw;
+    background: #fff;
+  }
+  
+  .search_icon {
+    height: 60%;
+    width: 10%;
+    font-size: 2vw;
+    float: right;
+    display: flex;
+    background: #7e2572;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0% 30px 30px 0%;
+    color: white;
+    text-decoration: none;
   }
 }

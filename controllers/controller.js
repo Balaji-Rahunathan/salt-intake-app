@@ -89,6 +89,7 @@ function onSearch() {
                 drop: function (event, ui) {
                     var target = document.getElementById(currentId);
                     var child = document.getElementById("drop-target").firstChild
+                    var info = document.getElementById("info-container");
                     var name = document.getElementById("name")
                     var image = document.getElementById("productImage")
                     var saltLevel = document.getElementById("saltLevel")
@@ -109,6 +110,7 @@ function onSearch() {
                         medium.style.opacity = 0.3
                         low.style.opacity = 1
                     }
+                    info.style.display = "none"
                     mg.style.opacity = 1
                     saltLevel.innerHTML = target.getAttribute("saltLevel")
                     image.src = target.getAttribute("image")

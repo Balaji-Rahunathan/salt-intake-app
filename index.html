@@ -16,11 +16,17 @@
     <div class="container-fluid page-bg" id="page">
         <div class="search-board">
             <div class="search-container">
-                <input type="text" id="search" onkeyup="onSearch()" name="search" class="search-input" placeholder="Search">
+                <input type="text" id="search" onkeyup="onSearch()" name="search" class="search-input"
+                    placeholder="Search">
+                <a href="#" class="search_icon"><i class="fa fa-search"></i></a>
             </div>
         </div>
         <div class="info-board">
             <div id=drop-target class="board">
+            </div>
+            <div class="info-container" id="info-container">
+                <i class="fa fa-angle-double-down info-arrow" aria-hidden="true"></i>
+                <div class="info-text" >Drag the items here to know the salt level</div>
             </div>
             <div class="content-container">
                 <img id="productImage" />
