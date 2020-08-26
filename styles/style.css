@@ -203,7 +203,15 @@ body {
   font-size: 24px;
   margin-top: 25%;
   font-weight: 600;
+  color: #263b3b;
+  text-align: center;
 }
+.drop-icon {
+  color: #8c0863;
+  font-size: 64px !important;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 800px) {
   .page-bg {
     background-image: url("../assets/images/bacground_img.svg");
