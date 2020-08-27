@@ -16,6 +16,13 @@ if (_iOSDevice) {
 }
 var input = document.getElementById("search");
 var parent = document.getElementById("rack-container");
+var mg = document.getElementById("mg")
+var high = document.getElementById("high")
+var medium = document.getElementById("medium")
+var low = document.getElementById("low")
+var saltLevel = document.getElementById("saltLevel")
+var image = document.getElementById("productImage")
+var info = document.getElementById("info-container");
 
 var url = "../data/product.json";
 
@@ -38,6 +45,7 @@ function onSearch() {
             var productContainer = document.createElement("DIV")
             productContainer.classList.add("product-container");
             productContainer.classList.add("container-draggable" + model._id);
+            productContainer.id = "container-draggable" + model._id;
             var product = document.createElement("IMG")
             product.classList.add("product")
             product.classList.add("draggable" + model._id)
@@ -84,55 +92,69 @@ function onSearch() {
                 }
             });
 
-
-            $("#drop-target").droppable({
-                drop: function (event, ui) {
-                    var target = document.getElementById(currentId);
-                    var child = document.getElementById("drop-target").firstChild
-                    var info = document.getElementById("info-container");
-                    var name = document.getElementById("name")
-                    var image = document.getElementById("productImage")
-                    var saltLevel = document.getElementById("saltLevel")
-                    var mg = document.getElementById("mg")
-                    var high = document.getElementById("high")
-                    var medium = document.getElementById("medium")
-                    var low = document.getElementById("low")
-                    if (target.getAttribute("riskFactor") == "high") {
-                        high.style.opacity = 1
-                        medium.style.opacity = 0.3
-                        low.style.opacity = 0.3
-                    } else if (target.getAttribute("riskFactor") == "medium") {
-                        high.style.opacity = 0.3
-                        medium.style.opacity = 1
-                        low.style.opacity = 0.3
-                    } else if (target.getAttribute("riskFactor") == "low") {
-                        high.style.opacity = 0.3
-                        medium.style.opacity = 0.3
-                        low.style.opacity = 1
-                    }
-                    info.style.display = "none"
-                    mg.style.opacity = 1
-                    saltLevel.innerHTML = target.getAttribute("saltLevel")
-                    image.src = target.getAttribute("image")
-                    image.style.opacity = 1
-                    name.innerHTML = target.getAttribute("name")
-                    event.target.removeChild(child)
-                    event.target.appendChild(target);
-                    target.style.display = "none"
-                    target.style.top = 0
-                    target.style.left = 0
-                    target.style.right = 0
-                    target.style.bottom = 0
-                }
-            });
-
         })
     });
 
 }
 
 
+$("#drop-target").droppable({
+    drop: function (event, ui) {
+        var target = document.getElementById(currentId);
+        var child = document.getElementById("drop-target").firstChild
+        var name = document.getElementById("name")
+
+        if (target.getAttribute("riskFactor") == "high") {
+            high.style.opacity = 1
+            medium.style.opacity = 0.3
+            low.style.opacity = 0.3
+        } else if (target.getAttribute("riskFactor") == "medium") {
+            high.style.opacity = 0.3
+            medium.style.opacity = 1
+            low.style.opacity = 0.3
+        } else if (target.getAttribute("riskFactor") == "low") {
+            high.style.opacity = 0.3
+            medium.style.opacity = 0.3
+            low.style.opacity = 1
+        }
+        info.style.display = "none"
+        mg.style.opacity = 1
+        // name.style.opacity = 0
+        saltLevel.style.opacity = 1
+        saltLevel.innerHTML = target.getAttribute("saltLevel")
+        image.src = target.getAttribute("image")
+        image.style.opacity = 1
+        name.innerHTML = target.getAttribute("name")
+        if (child.nextSibling) {
+            var productContainer = document.getElementById("container-" + child.nextSibling.getAttribute("id"))
+            child.nextSibling.style.display = "block"
+            productContainer.appendChild(child.nextSibling)
+        }
+        event.target.appendChild(target);
+        target.style.display = "none"
+        target.style.top = 0
+        target.style.left = 0
+        target.style.right = 0
+        target.style.bottom = 0
+    }
+});
+
+
 function removeAllChildNodes(parent) {
+    var child = document.getElementById("drop-target").firstChild
+    var name = document.getElementById("name")
+
+    if(child.nextSibling) {
+        document.getElementById("drop-target").removeChild(child.nextSibling)
+    }
+    high.style.opacity = 0
+    medium.style.opacity = 0
+    low.style.opacity = 0
+    mg.style.opacity = 0
+    saltLevel.style.opacity = 0
+    image.style.opacity = 0
+    name.innerHTML = ""
+    info.style.display = "flex"
     while (parent.firstChild) {
         parent.removeChild(parent.firstChild);
     }

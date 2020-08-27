@@ -21,14 +21,14 @@ body {
   left: 0%;
   max-width: 55vw;
   height: 27.5vw;
-  overflow-x: auto;
+  overflow-x: scroll;
 }
 .rack-container {
   /* background-image: url("../assets/images/product_rack.svg");
   background-position: center;
   background-size: contain;
   background-repeat: repeat; */
-  width: 180vw;
+  width: 140vw;
   /* height: 27.5vw; */
   display: flex;
   flex-wrap: wrap;
@@ -153,6 +153,7 @@ body {
 #name{
   font-size:1.5vw;
   text-transform:capitalize;
+  /* opacity: 0; */
 }
 .risk-salt-seperator{
   display: flex;
@@ -176,6 +177,8 @@ body {
   height:2vw;
   color:purple;
   font-weight:bolder;
+  opacity:0
+
 }
 #mg{
   font-size:2vw;
@@ -460,4 +463,46 @@ body {
     color: white;
     text-decoration: none;
   }
+  .info-container {
+    position: absolute;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-around;
+    align-items:center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    padding:0px 1.5vw 1.5vw 1.5vw;
+  }
+  
+  .info-arrow{
+    width: 30%;
+    height: 30%;
+    font-size:20vw !important;
+    text-align: center;
+    color:green;
+    position: absolute;
+    top:1vw;
+    right:14vw;  
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes example {
+    0%   {top:1vw}
+    /* 25%  {top:2vw} */
+    50%  {top:2vw}
+    100% {top:1vw}
+  }
+  
+  .info-text{
+    padding-top: 14vw;
+    font-size:3vw;
+    font-weight:bolder;
+    text-align: center;
+  }
+  
+
 }
