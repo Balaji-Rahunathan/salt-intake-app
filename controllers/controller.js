@@ -24,7 +24,7 @@ var saltLevel = document.getElementById("saltLevel")
 var image = document.getElementById("productImage")
 var info = document.getElementById("info-container");
 
-var url = "../data/product.json";
+var url = "../data/data.json";
 
 onSearch()
 
