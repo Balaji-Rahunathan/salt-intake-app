@@ -105,14 +105,23 @@ $("#drop-target").droppable({
     var name = document.getElementById("name");
 
     if (target.getAttribute("riskFactor") == "high") {
+      $("#high").addClass("blink_me");
+      $("#medium").removeClass("blink_me");
+      $("#low").removeClass("blink_me");
       high.style.opacity = 1;
       medium.style.opacity = 0.3;
       low.style.opacity = 0.3;
     } else if (target.getAttribute("riskFactor") == "medium") {
+      $("#medium").addClass("blink_me");
+      $("#high").removeClass("blink_me");
+      $("#low").removeClass("blink_me");
       high.style.opacity = 0.3;
       medium.style.opacity = 1;
       low.style.opacity = 0.3;
     } else if (target.getAttribute("riskFactor") == "low") {
+      $("#low").addClass("blink_me");
+      $("#medium").removeClass("blink_me");
+      $("#high").removeClass("blink_me");
       high.style.opacity = 0.3;
       medium.style.opacity = 0.3;
       low.style.opacity = 1;

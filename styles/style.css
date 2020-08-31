@@ -322,6 +322,16 @@ body {
 
 }
 
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .page-bg {
     background-image: url("../assets/images/bacground_img.svg");
