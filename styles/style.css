@@ -420,10 +420,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    bottom: 0;
+    bottom: 6%;
     left: 7%;
     width: 86%;
-    height: 83%;
+    height: 75%;
     padding: 0px 1.5vw 1.5vw 1.5vw;
   }
 
@@ -604,5 +604,19 @@ body {
     text-align: center;
   }
 
+  #grams {
+    font-size: 2vw;
+    text-align: left !important;
+    flex: 0 1 auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: flex-start;
+
+  }
+
+  ::-webkit-scrollbar {
+
+    height: 1.5vh;
+  }
 
 }
