@@ -1,5 +1,6 @@
 var currentId = "#draggable1"
 var dragging = false
+
 function getCurrentId(event) {
     if (!dragging) {
         currentId = event.target.id
@@ -34,8 +35,7 @@ function onSearch() {
         var filteredData = data.filter(filter => {
             if (input.value === "") {
                 return filter
-            }
-            else {
+            } else {
                 return filter.name.toUpperCase().includes(input.value.toUpperCase())
             }
         })
@@ -100,6 +100,7 @@ function onSearch() {
 
 $("#drop-target").droppable({
     drop: function (event, ui) {
+        $("#grams").css("display", "block");
         var target = document.getElementById(currentId);
         var child = document.getElementById("drop-target").firstChild
         var name = document.getElementById("name")
@@ -144,7 +145,7 @@ function removeAllChildNodes(parent) {
     var child = document.getElementById("drop-target").firstChild
     var name = document.getElementById("name")
 
-    if(child.nextSibling) {
+    if (child.nextSibling) {
         document.getElementById("drop-target").removeChild(child.nextSibling)
     }
     high.style.opacity = 0
