@@ -6,25 +6,26 @@ body {
 /* width */
 ::-webkit-scrollbar {
   height: 2.5vh;
+  display: none;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
+
   border-radius: 10px;
-  background: #7e2572;
+  background: none;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #f0f0f0;
+  background: none;
   border-radius: 10px;
 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #f0f0f0;
+  background: none;
 }
 
 .page-bg {
@@ -407,16 +408,15 @@ body {
     left: 0%;
     position: absolute;
 
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    bottom: 0vw;
+
   }
 
   span.arrow-right {
-    right: 50vw !important;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    right: 0px !important;
+    bottom: 0vw;
+    left: 93vw !important;
+    position: absolute;
   }
 
   .search-board {
@@ -673,20 +673,19 @@ span.arrow-right {
   color: white;
   z-index: 2;
   cursor: pointer;
+  line-height: 0;
 }
 
 span.arrow-left {
   left: 0%;
   position: absolute;
 
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  bottom: 0vw;
+
 }
 
 span.arrow-right {
-  right: 0px;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  left: 52.5vw;
+  bottom: 0vw;
+  position: absolute;
 }
