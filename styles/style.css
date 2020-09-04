@@ -5,7 +5,6 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-
   height: 2.5vh;
 }
 
@@ -13,18 +12,19 @@ body {
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
-  background: #319b32;
+  background: #7e2572;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #7e2572;
+  background: #f0f0f0;
   border-radius: 10px;
+
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #7e2572;
+  background: #f0f0f0;
 }
 
 .page-bg {
@@ -44,6 +44,12 @@ body {
   position: absolute;
   bottom: 5%;
   left: 0%;
+  max-width: 55vw;
+  height: 27.5vw;
+  overflow: hidden;
+}
+
+.rack-scroll {
   max-width: 55vw;
   height: 27.5vw;
   overflow-x: scroll;
@@ -158,16 +164,16 @@ body {
 
 @keyframes example {
   0% {
-    top: 1vw
+    top: 1vw;
   }
 
   /* 25%  {top:2vw} */
   50% {
-    top: 2vw
+    top: 2vw;
   }
 
   100% {
-    top: 1vw
+    top: 1vw;
   }
 }
 
@@ -177,7 +183,6 @@ body {
   font-weight: bolder;
   text-align: center;
 }
-
 
 #productImage {
   width: 40%;
@@ -215,13 +220,13 @@ body {
   height: 2vw;
   color: purple;
   font-weight: bolder;
-  opacity: 0
+  opacity: 0;
 }
 
 #mg {
   font-size: 2vw;
   font-weight: bolder;
-  opacity: 0
+  opacity: 0;
 }
 
 #high {
@@ -247,10 +252,7 @@ body {
 .green {
   border-color: green;
   background-color: green;
-
 }
-
-
 
 .yellow {
   border-color: #ff8000;
@@ -319,7 +321,6 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   align-self: flex-start;
-
 }
 
 .blink_me {
@@ -356,18 +357,66 @@ body {
     position: absolute;
     bottom: 5%;
     left: 0%;
-    max-width: 100vw;
+    max-width: 150vw;
 
-    height: 50vw;
+    height: 75vw;
     overflow-x: auto;
   }
 
-  .rack-container {
+  .rack-scroll {
+    max-width: 150vw;
+    margin-right: 50vw;
+    margin-left: 0;
+    height: 75vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
 
+  .rack-container {
     width: 320vw;
     /* height: 50vw; */
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .product {
+    width: 24vw;
+    height: 24vw;
+  }
+
+  .product-container {
+    display: flex;
+    width: 24vw;
+    height: 24vw;
+    object-fit: contain;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  span.arrow-left,
+  span.arrow-right {
+    display: block;
+    position: absolute;
+    font-size: 8vw !important;
+    color: white;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  span.arrow-left {
+    left: 0%;
+    position: absolute;
+
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  span.arrow-right {
+    right: 50vw !important;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
 
   .search-board {
@@ -407,20 +456,6 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1000;
-  }
-
-  .product {
-    width: 16vw;
-    height: 16vw;
-  }
-
-  .product-container {
-    display: flex;
-    width: 16vw;
-    height: 16vw;
-    object-fit: contain;
-    justify-content: center;
-    align-items: flex-end;
   }
 
   .content-container {
@@ -475,7 +510,7 @@ body {
   #mg {
     font-size: 5vw;
     font-weight: bolder;
-    opacity: 0
+    opacity: 0;
   }
 
   #high {
@@ -497,7 +532,6 @@ body {
     color: transparent;
     font-size: 2.5vw;
   }
-
 
   .yellow {
     border-color: #ff8000;
@@ -592,16 +626,16 @@ body {
 
   @keyframes example {
     0% {
-      top: 1vw
+      top: 1vw;
     }
 
     /* 25%  {top:2vw} */
     50% {
-      top: 2vw
+      top: 2vw;
     }
 
     100% {
-      top: 1vw
+      top: 1vw;
     }
   }
 
@@ -619,18 +653,40 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
     align-self: flex-start;
-
   }
 
   ::-webkit-scrollbar {
-
     height: 1.5vh;
-
   }
 
   .blink_me {
     animation: blinker 1s linear infinite;
     font-size: 3vw !important;
   }
+}
 
+span.arrow-left,
+span.arrow-right {
+  display: block;
+  position: absolute;
+  font-size: 3vw;
+  color: white;
+  z-index: 2;
+  cursor: pointer;
+}
+
+span.arrow-left {
+  left: 0%;
+  position: absolute;
+
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+span.arrow-right {
+  right: 0px;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
