@@ -379,7 +379,7 @@ span.arrow-right {
   }
 
   .rack {
-    background-image: url(../assets/images/product_rack.svg);
+    background-image: url("../assets/images/product_rack.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -393,7 +393,7 @@ span.arrow-right {
   }
 
   .info-board {
-    background-image: url(../assets/images/mobile_card.svg);
+    background-image: url("../assets/images/mobile_card.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -535,7 +535,7 @@ span.arrow-right {
   }
 
   #saltLevel {
-    font-size: 7vw;
+    font-size: 5vw;
     height: 7vw;
     color: purple;
     font-weight: bolder;
