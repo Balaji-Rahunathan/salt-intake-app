@@ -359,7 +359,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: 5%;
+    bottom: 10%;
     left: 0%;
     max-width: 150vw;
 
@@ -688,12 +688,12 @@ span.arrow-left {
   left: 0%;
   position: absolute;
 
-  bottom: 0vw;
+  bottom: 5vw;
 
 }
 
 span.arrow-right {
   left: 52.5vw;
-  bottom: 0vw;
+  bottom: 5vw;
   position: absolute;
 }
