@@ -216,13 +216,16 @@ $hs.on('mousewheel', function (e) {
 $(document).ready(function () {
     $(".arrow-left").click(function () {
         $(".rack-scroll").animate({
-            scrollLeft: "-=" + 100
+            scrollLeft: "-=" + 300
+
         });
+
     });
     $(".arrow-right").click(function () {
         $(".rack-scroll").animate({
-            scrollLeft: "+=" + 100
+            scrollLeft: "+=" + 300
         });
+
     });
 });
 
@@ -241,5 +244,5 @@ jQuery(function ($) {
 });
 
 $(document).ready(function () {
-    $('.rack-scroll').hScroll(60); // You can pass (optionally) scrolling amount
+    $('.rack-scroll').hScroll(100); // You can pass (optionally) scrolling amount
 });

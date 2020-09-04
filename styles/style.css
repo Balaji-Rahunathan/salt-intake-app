@@ -339,6 +339,8 @@ body {
   body {
     overflow: hidden !important;
     overscroll-behavior-x: none;
+    position: relative;
+    width: 100vw;
   }
 
   .page-bg {
@@ -383,6 +385,7 @@ body {
   .product {
     width: 24vw;
     height: 24vw;
+    z-index: 2;
   }
 
   .product-container {
@@ -392,6 +395,7 @@ body {
     object-fit: contain;
     justify-content: center;
     align-items: flex-end;
+    z-index: 2;
   }
 
   span.arrow-left,
@@ -426,6 +430,7 @@ body {
     background-size: contain;
     position: absolute;
     top: -20vw;
+    z-index: 2;
     left: 15vw;
     width: 70vw;
     height: 35vw;
@@ -437,7 +442,8 @@ body {
     background-position: center;
     background-size: contain;
     position: absolute;
-    top: 15vw;
+    top: 5vw;
+    z-index: 1;
     left: 20vw;
     width: 60vw;
     height: 68vw;
@@ -478,6 +484,7 @@ body {
 
   #name {
     font-size: 4vw;
+    font-weight: 600;
     text-transform: capitalize;
   }
 
@@ -549,7 +556,7 @@ body {
   }
 
   .risk-container div {
-    font-size: 2.5vw;
+    font-size: 3vw;
     font-weight: bold;
     opacity: 0.8;
   }
@@ -661,7 +668,7 @@ body {
 
   .blink_me {
     animation: blinker 1s linear infinite;
-    font-size: 3vw !important;
+    font-size: 4vw !important;
   }
 }
 
