@@ -254,7 +254,6 @@ var rack = document.getElementById("rack-scroll")
 // $("myRange").(function(){
 //     $("rack-scroll").animate({scrollLeft: "+=" +this.value*16});
 //   }); 
-console.log($("rack-scroll"))
 slider.oninput = function() {
   rack.scrollLeft  = this.value*16
 // $("#rack-scroll").scrollTo(this.value*16);

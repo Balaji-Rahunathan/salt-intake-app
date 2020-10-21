@@ -389,7 +389,7 @@ span.arrow-right {
   width: 35px;
   height: 35px;
   border: 0;
-  background: url('/assets/images/slider.svg');
+  background: url('../assets/images/slider.svg');
   cursor: pointer;
 }
 
@@ -397,7 +397,7 @@ span.arrow-right {
   width: 35px;
   height: 35px;
   border: 0;
-  background: url('/assets/images/slider.svg');
+  background: url('../assets/images/slider.svg');
   cursor: pointer;
 }
 
@@ -769,7 +769,7 @@ span.arrow-right {
   width: 50px;
   height: 50px;
   border: 0;
-  background: url('/assets/images/slider.svg');
+  background: url('../assets/images/slider.svg');
   cursor: pointer;
 }
 
@@ -777,7 +777,7 @@ span.arrow-right {
   width: 50px;
   height: 50px;
   border: 0;
-  background: url('/assets/images/slider.svg');
+  background: url('../assets/images/slider.svg');
   cursor: pointer;
 }
 
