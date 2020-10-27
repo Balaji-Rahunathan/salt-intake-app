@@ -168,7 +168,7 @@ function removeAllChildNodes(parent) {
     high.style.opacity = 0
     medium.style.opacity = 0
     low.style.opacity = 0
-    mg.style.opacity = 0
+    // mg.style.opacity = 0
     saltLevel.style.opacity = 0
     image.style.opacity = 0
     name.innerHTML = ""
