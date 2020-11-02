@@ -225,7 +225,7 @@
       },
       {
         "_id": "41",
-        "name":"cornered beef",
+        "name":"corned beef",
         "image": "./assets/images/products/products_corned beef.svg",
         "riskFactor": "high",
         "saltLevel": ">1.5g"
