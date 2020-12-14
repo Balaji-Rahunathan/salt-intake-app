@@ -258,3 +258,16 @@ slider.oninput = function() {
   rack.scrollLeft  = this.value*16
 // $("#rack-scroll").scrollTo(this.value*16);
 }
+
+
+// ............
+$(window).on("load", function () {
+    $('#preloader').fadeOut('slow', function () {
+        $(this).remove();
+        RevealLoad();
+        TweenMax.from('.swiper-container', 0.5, {
+            autoAlpha: 0,
+            scale: 1.1
+        })
+    });
+});
