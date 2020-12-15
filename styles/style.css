@@ -402,6 +402,9 @@ span.arrow-right {
 }
 
 @media only screen and (max-width: 800px) {
+
+  .linkk{display: none;}
+
   body {
     overflow: hidden !important;
 
