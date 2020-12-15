@@ -78,14 +78,14 @@
       },
       {
         "_id": "15",
-        "name":"rapeseed oil",
+        "name":"rapeseed",
         "image": "./assets/images/products/products_rapeseed.svg",
         "riskFactor": "low",
         "saltLevel": "<0.3g"
       },
       {
         "_id": "16",
-        "name":"meat",
+        "name":"fresh unprocessed meat",
         "image": "./assets/images/products/products_meat products.svg",
         "riskFactor": "low",
         "saltLevel": "<0.3g"
@@ -94,8 +94,8 @@
         "_id": "17",
         "name":"fish",
         "image": "./assets/images/products/products_fish.svg",
-        "riskFactor": "low",
-        "saltLevel": "<0.3g"
+        "riskFactor": "medium",
+        "saltLevel": "0.3-1.5g"
       },
       {
         "_id": "18",
@@ -169,7 +169,7 @@
       },
       {
         "_id": "32",
-        "name":"creamed crackers",
+        "name":"cream crackers",
         "image": "./assets/images/products/products_crackers.svg",
         "riskFactor": "medium",
         "saltLevel": "0.3-1.5g"
@@ -185,8 +185,8 @@
         "_id": "34",
         "name":"pesto",
         "image": "./assets/images/products/products_pesto.svg",
-        "riskFactor": "medium",
-        "saltLevel": "0.3-1.5g"
+        "riskFactor": "high",
+        "saltLevel": ">1.5g"
       },
       {
         "_id": "36",
