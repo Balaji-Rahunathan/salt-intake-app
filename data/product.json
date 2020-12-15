@@ -78,7 +78,7 @@
       },
       {
         "_id": "15",
-        "name":"rapeseed",
+        "name":"rapseed",
         "image": "./assets/images/products/products_rapeseed.svg",
         "riskFactor": "low",
         "saltLevel": "<0.3g"
