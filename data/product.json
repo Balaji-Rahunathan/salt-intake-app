@@ -120,7 +120,7 @@
       },
       {
         "_id": "23",
-        "name":"potato waffle",
+        "name":"potato waffles",
         "image": "./assets/images/products/products_waffle.svg",
         "riskFactor": "medium",
         "saltLevel": "0.3-1.5g"
@@ -141,21 +141,21 @@
       },
       {
         "_id": "28",
-        "name":"baked bean",
+        "name":"baked beans",
         "image": "./assets/images/products/products_beans-60.svg",
         "riskFactor": "medium",
         "saltLevel": "0.3-1.5g"
       },
       {
         "_id": "29",
-        "name":"meat based soup",
+        "name":"packet soup",
         "image": "./assets/images/products/products_soup.svg",
-        "riskFactor": "medium",
-        "saltLevel": "0.3-1.5g"
+        "riskFactor": "high",
+        "saltLevel": ">1.5g"
       },
       {
         "_id": "30",
-        "name":"vegetable soup",
+        "name":"Fresh Vegetable Soup",
         "image": "./assets/images/products/products_vegetable soup.svg",
         "riskFactor": "medium",
         "saltLevel": "0.3-1.5g"
