@@ -63,11 +63,11 @@ function onSearch() {
 
             $("#" + "draggable" + model._id).draggable({
                 scroll: false,
-                start: function (event) {
+                start: function() {
                     var stylesheet = document.styleSheets[0]
                     stylesheet.insertRule(`.${"draggable" + model._id} { top:0px !important; left:0px !important;}`, 0);
                 },
-                stop: function (event, ui) {
+                stop: function(event) {
                     var x = event.clientX;
                     var y = event.clientY;
                     elementMouseIsOver = document.elementFromPoint(x, y);
@@ -83,7 +83,7 @@ function onSearch() {
                     target.style.bottom = 0
                     dragging = false
                 },
-                drag: function (event, ui) {
+                drag: function(event) {
                     var target = document.getElementById("page");
                     target.appendChild(document.getElementById("draggable" + model._id))
                     var product = document.getElementsByClassName("draggable" + model._id)
@@ -91,15 +91,13 @@ function onSearch() {
                     dragging = true
                 }
             });
-
         })
     });
 
 }
 
-
 $("#drop-target").droppable({
-    drop: function (event, ui) {
+    drop: function (event) {
         $("#grams").css("display", "block");
         var target = document.getElementById(currentId);
         var child = document.getElementById("drop-target").firstChild
@@ -113,7 +111,6 @@ $("#drop-target").droppable({
             medium.style.opacity = 0.1
             low.style.opacity = 0.1
 
-
         } else if (target.getAttribute("riskFactor") == "medium") {
             $("#medium").addClass("blink_me");
             $("#high").removeClass("blink_me");
@@ -122,8 +119,6 @@ $("#drop-target").droppable({
             medium.style.opacity = 1
             low.style.opacity = 0.1
 
-
-
         } else if (target.getAttribute("riskFactor") == "low") {
             $("#low").addClass("blink_me");
             $("#medium").removeClass("blink_me");
@@ -131,8 +126,6 @@ $("#drop-target").droppable({
             high.style.opacity = 0.1
             medium.style.opacity = 0.1
             low.style.opacity = 1
-
-
 
         }
         info.style.display = "none"
@@ -178,96 +171,15 @@ function removeAllChildNodes(parent) {
     }
 }
 
-// var $hs = $('.rack');
-// var $sLeft = 0;
-// var $hsw = $hs.outerWidth(true);
-
-// $(window).resize(function () {
-//     $hsw = $hs.outerWidth(true);
-// });
-
-// function scrollMap($sLeft) {
-//     $hs.scrollLeft($sLeft);
-//     //$('.js-scroll').animate( { scrollLeft: $sLeft }, 10); // animate
-// }
-
-// $hs.on('mousewheel', function (e) {
-
-//     var $max = $hsw * 2 + (-e.originalEvent.wheelDeltaY);
-
-//     if ($sLeft > -1) {
-//         $sLeft = $sLeft + (-e.originalEvent.wheelDeltaY);
-//     } else {
-//         $sLeft = 0;
-//     }
-//     //
-//     if ($sLeft > $max) {
-//         $sLeft = $max;
-//     }
-
-//     if (($sLeft > 0) && ($sLeft < $max)) {
-//         e.preventDefault();
-//         e.stopPropagation();
-//     }
-//     scrollMap($sLeft);
-// });
-
-
-// $(document).ready(function () {
-//     $(".arrow-left").click(function () {
-//         $(".rack-scroll").animate({
-//             scrollLeft: "-=" + 1000
-
-//         });
-
-//     });
-//     $(".arrow-right").click(function () {
-//         $(".rack-scroll").animate({
-//             scrollLeft: "+=" + 1000
-//         });
-
-//     });
-// });
-
-// jQuery(function ($) {
-//     $.fn.hScroll = function (amount) {
-//         amount = amount || 120;
-//         $(this).bind("DOMMouseScroll mousewheel", function (event) {
-//             var oEvent = event.originalEvent,
-//                 direction = oEvent.detail ? oEvent.detail * -amount : oEvent.wheelDelta,
-//                 position = $(this).scrollLeft();
-//             position += direction > 0 ? -amount : amount;
-//             $(this).scrollLeft(position);
-//             event.preventDefault();
-//         })
-//     };
-// });
-
-// $(document).ready(function () {
-//     $('.rack-scroll').hScroll(100); // You can pass (optionally) scrolling amount
-// });
-
-
 var slider = document.getElementById("myRange");
 var rack = document.getElementById("rack-scroll")
-
-// $("myRange").(function(){
-//     $("rack-scroll").animate({scrollLeft: "+=" +this.value*16});
-//   }); 
 slider.oninput = function() {
   rack.scrollLeft  = this.value*16
-// $("#rack-scroll").scrollTo(this.value*16);
 }
 
 
-// ............
 $(window).on("load", function () {
     $('#preloader').fadeOut('slow', function () {
         $(this).remove();
-        RevealLoad();
-        TweenMax.from('.swiper-container', 0.5, {
-            autoAlpha: 0,
-            scale: 1.1
-        })
     });
 });
